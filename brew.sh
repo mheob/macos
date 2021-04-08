@@ -47,9 +47,9 @@ brew install --cask figma
 brew install --cask firefox
 brew install --cask firefox-developer-edition
 brew tap homebrew/cask-fonts && brew install --cask font-cascadia-code
-brew brew install --cask font-fira-code
-brew brew install --cask font-jetbrains-mono
-brew brew install --cask font-victor-mono
+brew install --cask font-fira-code
+brew install --cask font-jetbrains-mono
+brew install --cask font-victor-mono
 brew install --cask gitify
 brew install --cask gitkraken
 brew install --cask google-chrome
