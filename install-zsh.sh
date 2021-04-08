@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cp "./.p10k.zsh" "$HOME/.p10k.zsh"
 cp "./.zsh_aliases" "$HOME/.zsh_aliases"
 cp "./.zshrc" "$HOME/.zshrc"
 

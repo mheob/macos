@@ -20,8 +20,9 @@ alias bi='open -a Brave\ Browser --args --incognito'
 # Editor
 alias m='micro'
 
-# Node
+# NVM
 alias nup='nvm install node --reinstall-packages-from=node'
+alias nupl='nvm install lts/fermium --reinstall-packages-from=node'
 
 # NPM
 alias npm-po='npm i --package-lock-only'
