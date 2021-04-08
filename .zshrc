@@ -22,13 +22,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
-  git
   autojump
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-
-plugins=(
   autoupdate
   bgnotify
   colored-man-pages
