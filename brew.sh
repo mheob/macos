@@ -29,6 +29,7 @@ brew install \
   htop \
   micro \
   nvm \
+  openjdk \
   subversion \
   trash \
   tree \
@@ -68,19 +69,18 @@ brew install --cask \
   loom \
   menumeters \
   microsoft-auto-update \
-  microsoft-edge-dev \
+  homebrew/cask-versions/microsoft-edge-dev \
   microsoft-office \
   microsoft-teams \
   nordvpn \
   obs \
-  openjdk \
   poedit \
   postman \
   rectangle \
   responsively \
   signal \
   slack \
-  spotigy \
+  spotify \
   teamviewer \
   telegram \
   twitch \
