@@ -51,7 +51,6 @@ brew install --cask \
   dbeaver-community \
   deepl \
   discord \
-  emclient \
   figma \
   firefox \
   firefox-developer-edition \
@@ -80,6 +79,7 @@ brew install --cask \
   responsively \
   signal \
   slack \
+  spark \
   spotify \
   teamviewer \
   telegram \
