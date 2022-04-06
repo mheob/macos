@@ -1,0 +1,32 @@
+#!/bin/sh
+
+help() {
+  echo "Use on of the following arguments to specifiy the action:"
+  echo "\"update\" or \"update-lts\" or \"npm\""
+}
+
+if [ $# -ne 1 ]; then
+  help
+  exit 0
+fi
+
+. ~/.nvm/nvm.sh
+
+if [ "update" == $1 ]; then
+  echo "Update Node with 'nvm install node --reinstall-packages-from=default'"
+  nvm install node --reinstall-packages-from=default
+elif [ "update-lts" == $1 ]; then
+  echo "Update Node LTS with 'nvm install --lts --reinstall-packages-from=default && nvm use node'"
+  nvm install --lts --reinstall-packages-from=default
+  nvm use node
+elif [ "npm" == $1 ]; then
+  echo "Update global NPM packages in stable and lts with 'npm -g up && nvm use --lts && npm -g up && nvm use node'"
+  npm -g up
+  nvm use --lts
+  npm -g up
+  nvm use node
+else
+  help
+fi
+
+exit 0
