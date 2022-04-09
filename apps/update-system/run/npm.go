@@ -1,32 +1,15 @@
-package cmd
+package run
 
 import (
 	"fmt"
 	"mheob/update-system/utils"
-
-	"github.com/spf13/cobra"
 )
 
-var npmCmd = &cobra.Command{
-	Use:   "npm",
-	Short: "Update global npm packages",
-	Long:  "Update global npm packages.",
-	Run: func(cmd *cobra.Command, args []string) {
-		RunUpdateNpm()
-	},
-}
-
-func init() {
-	rootCmd.AddCommand(npmCmd)
-}
-
-func RunUpdateNpm() {
-	command := "npm"
-
+func UpdateNpm() bool {
 	fmt.Printf(
 		"%sCheck global %s for updates starting ...%s\n",
 		utils.Color["purple"],
-		command,
+		"npm",
 		utils.Color["default"],
 	)
 
@@ -38,7 +21,9 @@ func RunUpdateNpm() {
 	fmt.Printf(
 		"%sCheck global %s for updates finished%s\n\n",
 		utils.Color["purple"],
-		command,
+		"npm",
 		utils.Color["default"],
 	)
+
+	return true
 }
