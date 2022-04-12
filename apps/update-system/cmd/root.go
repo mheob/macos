@@ -31,9 +31,9 @@ You can use this tool to update applications via brew, composer, npm and so on.`
 		}
 		if !hasFlag {
 			run.UpdateBrew()
+			run.UpdateOmz()
 			run.UpdateComposer()
 			run.UpdateNpm()
-			run.UpdateOmz()
 		}
 	},
 }
