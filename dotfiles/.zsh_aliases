@@ -1,0 +1,168 @@
+# ZSH
+alias zshaliases="vim ~/.zsh_aliases"
+alias zshconfig="vim ~/.zshrc"
+alias zshrestart="source ~/.zshrc"
+
+# General
+alias c='clear'
+alias l='exa --icons'
+alias ls='exa --icons'
+alias la='exa --all --icons'
+alias ll='exa --long --icons'
+alias lla='exa --all --long --icons'
+alias lsr='exa --recurse --icons'
+alias lst='exa --tree --icons'
+alias trm='trash'
+
+# Brew
+alias bl='brew list; echo'
+alias cleanup='brew autoremove && brew cleanup -s --prune=7'
+
+# Brave Incognito
+alias bi='open -a Brave\ Browser --args --incognito'
+
+# Xcode
+alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install'
+
+# Neovim
+alias vim='nvim'
+
+# Git
+alias gmc='gitmoji -c'
+alias gcz='git cz'
+
+# Netlify
+alias ntl='netlify'
+
+# NPM
+alias npm-po='npm i --package-lock-only'
+alias ni='npm i -E'
+
+alias nrc='npm run commit'
+alias nre='npm run export'
+alias nrl='npm run lint'
+alias nrs='npm run start'
+alias nrtc='npm run test:cov'
+alias nrtw='npm run test:watch'
+
+# PNPM
+alias pna='pnpm add'
+alias pnad='pnpm add -D'
+alias pnaf='pnpm add --filter '
+alias pnafd='pnpm add --filter '
+alias pnaw='pnpm add -w'
+alias pnadw='pnpm add -wD'
+alias pni='pnpm install'
+alias pno='pnpm outdated'
+alias pnup='pnpm update'
+alias pnupi='pnpm update -i'
+alias pnupil='pnpm update -iL'
+
+alias pnafb='pnpm run affected:build'
+alias pnafe='pnpm run affected:e2e'
+alias pnafl='pnpm run affected:lint'
+alias pnaft='pnpm run affected:test'
+alias pnrc='pnpm run commit'
+alias pnrcc='pnpm run check-ci'
+alias pnrcs='pnpm run changeset'
+alias pnrl='pnpm run lint'
+alias pnrd='pnpm run dev'
+alias pnrs='pnpm run start'
+alias pnrt='pnpm run test'
+
+# Yarn
+alias ya='yarn add'
+alias yad='yarn add -D'
+alias yaw='yarn add -W'
+alias yadw='yarn add -W -D'
+alias ys='yarn start'
+alias yup='yarn up'
+alias yupl='yarn upgrade'
+
+alias yc='yarn commit'
+alias ycc='yarn check-ci'
+alias ycs='yarn changeset'
+alias ye='yarn export'
+alias yl='yarn lint'
+alias ytc='yarn test:cov'
+alias ytw='yarn test:watch'
+alias yrmw='yarn remove -W'
+alias yafb='yarn affected:build'
+alias yafe='yarn affected:e2e'
+alias yafl='yarn affected:lint'
+alias yaft='yarn affected:test'
+alias yafsb='yarn affected:build-storybook'
+
+# Golang
+alias cobra='cobra-cli'
+
+# Fuck, a tool corrects errors in previous console commands
+eval $(thefuck --alias)
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Create a new directory and enter it
+function mkd() {
+  mkdir -p "$@" && cd "$_"
+}
+
+# Create files in subfolders
+function touchp() {
+  mkdir -p "$(dirname "$1")/" && touch "$1"
+}
+
+# Determine size of a file or total size of a directory
+function fs() {
+  if du -b /dev/null >/dev/null 2>&1; then
+    local arg=-sbh
+  else
+    local arg=-sh
+  fi
+  if [[ -n "$@" ]]; then
+    du $arg -- "$@"
+  else
+    du $arg .[^.]* ./*
+  fi
+}
+
+# Use Git’s colored diff when available
+hash git &>/dev/null
+if [ $? -eq 0 ]; then
+  function diff() {
+    git diff --no-index --color-words "$@"
+  }
+fi
+
+# Git - Delete all branches merged into main
+dam() {
+  echo "Deleting all merged branches ..."
+  git checkout main && git branch --merged | egrep -v "(^\*|main)" | xargs git branch -d
+  echo "☑️ Done!"
+}
+
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+function o() {
+  if [ $# -eq 0 ]; then
+    open .
+  else
+    open "$@"
+  fi
+}
+
+# `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
+# the `.git` directory, listing directories first. The output gets piped into
+# `less` with options to preserve color and line numbers, unless the output is
+# small enough for one screen.
+function tre() {
+  tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
+}

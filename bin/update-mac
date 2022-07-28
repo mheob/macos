@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Update Brew
+echo "\033[35mUpdate BREW starting ...\033[0m"
+brew update
+brew upgrade
+brew cu --all --yes --cleanup
+echo "\033[35mUpdate BREW finished\033[0m"
+echo
+
+# Update Oh My Zsh
+echo "\033[35mUpdate OH MY ZSH starting ...\033[0m"
+~/.oh-my-zsh/tools/upgrade.sh
+echo "\033[35mUpdate OH MY ZSH finished\033[0m"
+echo
+
+# Update global Comosoer dependencies and check for NPM updates
+echo "\033[35mCheck global NPM packages for updates starting ...\033[0m"
+npm -g outdated
+echo "\033[35mCheck global NPM packages for updates finished\033[0m"

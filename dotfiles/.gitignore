@@ -27,3 +27,6 @@ Temporary Items
 
 # iCloud generated files
 *.icloud
+
+# Misc
+.dccache

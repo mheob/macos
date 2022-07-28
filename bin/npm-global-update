@@ -21,6 +21,7 @@ elif [ "update-lts" == $1 ]; then
   nvm use node
 elif [ "npm" == $1 ]; then
   echo "Update global NPM packages in stable and lts with 'npm -g up && nvm use --lts && npm -g up && nvm use node'"
+  nvm use node
   npm -g up
   nvm use --lts
   npm -g up

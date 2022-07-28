@@ -1,0 +1,150 @@
+# brew bundle dump
+# brew bundle --file Brewfile
+
+tap "buo/cask-upgrade"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "lintingzhen/tap"
+
+brew "act"
+brew "webp"
+brew "azure-cli"
+brew "bat"
+brew "broot"
+brew "cheat"
+brew "php", restart_service: true
+brew "composer"
+brew "coreutils"
+brew "cowsay"
+brew "deno"
+brew "dust"
+brew "exa"
+brew "fd"
+brew "fortune"
+brew "gawk"
+brew "gh"
+brew "git"
+brew "gnupg"
+brew "go"
+brew "goreleaser"
+brew "gotop"
+brew "httpie"
+brew "mas"
+brew "micro"
+brew "neovim"
+brew "nvm"
+brew "openjdk"
+brew "pnpm"
+brew "rename"
+brew "streamlink"
+brew "subversion"
+brew "switchaudio-osx"
+brew "thefuck"
+brew "tldr"
+brew "trash"
+brew "tree"
+brew "wget"
+brew "wp-cli"
+brew "youtube-dl"
+brew "zsh"
+brew "lintingzhen/tap/commitizen-go"
+
+cask "1password"
+cask "1password-cli"
+cask "adobe-creative-cloud"
+cask "adoptopenjdk"
+cask "alfred"
+cask "alt-tab"
+cask "appcleaner"
+cask "bartender"
+cask "bitwarden"
+cask "brave-browser"
+cask "brave-browser-dev"
+cask "chatterino"
+cask "chatty"
+cask "cyberduck"
+cask "daisydisk"
+cask "dbeaver-community"
+cask "deepl"
+cask "devkinsta"
+cask "devtoys"
+cask "discord"
+cask "figma"
+cask "firefox-developer-edition"
+cask "flux"
+cask "font-cascadia-code"
+cask "font-fira-code"
+cask "font-jetbrains-mono"
+cask "font-victor-mono"
+cask "franz"
+cask "gitify"
+cask "gitkraken"
+cask "google-chrome"
+cask "google-drive"
+cask "graphql-playground"
+cask "gyazo"
+cask "handbrake"
+cask "insomnia"
+cask "iterm2"
+cask "itsycal"
+cask "jetbrains-toolbox"
+cask "loom"
+cask "menumeters"
+cask "michaelvillar-timer"
+cask "microsoft-auto-update"
+cask "microsoft-edge-dev"
+cask "microsoft-office"
+cask "microsoft-teams"
+cask "monitorcontrol"
+cask "nordvpn"
+cask "notion"
+cask "obs"
+cask "pika"
+cask "poedit"
+cask "pomatez"
+cask "postman"
+cask "rectangle"
+cask "responsively"
+cask "rocket"
+cask "signal"
+cask "skype"
+cask "slack"
+cask "spotify"
+cask "steam"
+cask "teamviewer"
+cask "telegram"
+cask "twitch"
+cask "typora"
+cask "visual-studio-code"
+cask "vlc"
+cask "whatsapp"
+cask "zoom"
+
+mas "AdGuard for Safari", id: 1440147259
+mas "Contrast", id: 1254981365
+mas "Dark Reader for Safari", id: 1438243180
+mas "Dogmelon Solitaire", id: 491300801
+mas "Evernote", id: 406056744
+mas "Flow", id: 1423210932
+mas "Full Deck Solitaire", id: 412980789
+mas "Hand Mirror", id: 1502839586
+mas "Keynote", id: 409183694
+mas "LanguageTool", id: 1534275760
+mas "Mahjong Solitaire Epic", id: 687208243
+mas "Numbers", id: 409203825
+mas "Octotree", id: 1457450145
+mas "Pages", id: 409201541
+mas "PomoDone App", id: 1096128050
+mas "Sequel Ace", id: 1518036000
+mas "Spark", id: 1176895641
+mas "Time Out", id: 402592703
+mas "Todoist", id: 585829637
+mas "Tomato One", id: 907364780
+mas "Trello", id: 1278508951
+mas "Wappalyzer", id: 1520333300
+mas "Xcode", id: 497799835
+mas "Yubico Authenticator", id: 1497506650
