@@ -1,7 +1,7 @@
 # ZSH
-alias zshaliases="vim ~/.zsh_aliases"
-alias zshconfig="vim ~/.zshrc"
-alias zshrestart="source ~/.zshrc"
+alias zshaliases='vim ~/.zsh_aliases'
+alias zshconfig='vim ~/.zshrc'
+alias zshrestart='source ~/.zshrc'
 
 # General
 alias c='clear'
@@ -100,7 +100,7 @@ alias cobra='cobra-cli'
 eval $(thefuck --alias)
 
 # Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
 # Always enable colored `grep` output
 alias grep='grep --color=auto'
