@@ -20,7 +20,8 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
 	ZSH_THEME="powerlevel10k/powerlevel10k"
 else
   # Set name of the theme to load.
-  ZSH_THEME="robbyrussell"
+  # ZSH_THEME="robbyrussell"
+  ZSH_THEME="apple"
 fi
 
 # Disable automatic updates
@@ -56,7 +57,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Aliases and functions
-source ".zsh_aliases"
+source "$HOME/.zsh_aliases"
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Node
 export NVM_DIR="$HOME/.nvm"
@@ -91,14 +95,31 @@ export PATH="$PNPM_HOME:$PATH"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
-# Default Exports
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/bin:$PATH"
+# Rust
+source "$HOME/.cargo/env"
+
+# Flutter
+export PATH="$PATH:$HOME/dev/sdks/flutter/bin"
 
 # Bun
 [ -s "/Users/a.boehm/.bun/_bun" ] && source "/Users/a.boehm/.bun/_bun"
 export BUN_INSTALL="/Users/a.boehm/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# Ruby
+eval "$(rbenv init - zsh)"
+#export PATH="$HOME/.rbenv/shims:$PATH"
+
+# Default Exports
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:$PATH"
+
 # Run tools
-source /Users/a.boehm/.config/broot/launcher/bash/br
+source /Users/a.boehm/Library/Application\ Support/org.dystroy.broot/launcher/bash/br
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# Starship
+eval "$(starship init zsh)"

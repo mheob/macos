@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Update Brew
 echo "\033[35mUpdate BREW starting ...\033[0m"

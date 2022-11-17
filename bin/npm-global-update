@@ -2,7 +2,7 @@
 
 help() {
   echo "Use on of the following arguments to specifiy the action:"
-  echo "\"update\" or \"update-lts\" or \"npm\""
+  echo "\033[31mupdate\033[0m | \033[31mupdate-lts\033[0m | \033[31mnpm\033[0m | \033[31mall\033[0m"
 }
 
 if [ $# -ne 1 ]; then
@@ -12,20 +12,46 @@ fi
 
 . ~/.nvm/nvm.sh
 
-if [ "update" == $1 ]; then
-  echo "Update Node with 'nvm install node --reinstall-packages-from=default'"
+CURRENT_NODE_VERSION=$(nvm current)
+restore_node_version() {
+  if [ $CURRENT_NODE_VERSION == v16* ]; then
+    nvm use "lts/*"
+  else
+    nvm use node
+  fi
+}
+
+update_current() {
+  echo "\033[35mUpdate Node with 'nvm install node --reinstall-packages-from=default'\033[0m"
   nvm install node --reinstall-packages-from=default
-elif [ "update-lts" == $1 ]; then
-  echo "Update Node LTS with 'nvm install --lts --reinstall-packages-from=default && nvm use node'"
+  restore_node_version
+}
+
+update_lts() {
+  echo "\033[35mUpdate Node LTS with 'nvm install --lts --reinstall-packages-from=default'\033[0m"
   nvm install --lts --reinstall-packages-from=default
-  nvm use node
-elif [ "npm" == $1 ]; then
-  echo "Update global NPM packages in stable and lts with 'npm -g up && nvm use --lts && npm -g up && nvm use node'"
+  restore_node_version
+}
+
+update_npm() {
+  echo "\033[35mUpdate global NPM packages in stable and lts with 'npm -g up && nvm use --lts && npm -g up && nvm use node'\033[0m"
   nvm use node
   npm -g up
   nvm use --lts
   npm -g up
-  nvm use node
+  restore_node_version
+}
+
+if [ "update" == $1 ]; then
+  update_current
+elif [ "update-lts" == $1 ]; then
+  update_lts
+elif [ "npm" == $1 ]; then
+  update_npmj
+elif [ "all" == $1 ]; then
+  update_current
+  update_lts
+  update_npm
 else
   help
 fi
