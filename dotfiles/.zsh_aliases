@@ -29,7 +29,7 @@ alias vim='nvim'
 
 # Git
 alias gmc='gitmoji -c'
-alias gcz='cz commit'
+alias gcz='npx cz'
 alias gstau='git stash push -u'
 
 # Netlify

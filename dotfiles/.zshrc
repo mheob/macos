@@ -107,8 +107,10 @@ export BUN_INSTALL="/Users/a.boehm/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Ruby
-eval "$(rbenv init - zsh)"
-#export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export LDFLAG=S"-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 # Default Exports
 export PATH="/usr/local/sbin:$PATH"
