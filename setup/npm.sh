@@ -11,9 +11,13 @@ npm i -g \
   alfred-hl \
   alfred-mdn \
   alfred-npms \
+  commitizen \
   corepack \
   cz-conventional-changelog \
   fkill-cli \
   gitmoji-cli \
+  neovim \
   netlify-cli \
-  npm
+  npm \
+  prettier
+

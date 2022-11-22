@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Collect constants like $PROJECT_ROOT
-source ../utils/constants.sh
+source ./utils/constants.sh
 
 # Add binaries to HOME path
 ln -s "$PROJECT_ROOT/bin" "$HOME/bin"
