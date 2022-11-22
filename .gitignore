@@ -27,3 +27,7 @@ Temporary Items
 
 # iCloud generated files
 *.icloud
+
+# Compiled stuff
+nvim/plugin
+

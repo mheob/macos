@@ -32,3 +32,7 @@ To enable Touch ID access on Iterm2. You need to do the following.
 Go to Preferences -> Advanced -> Allow sessions to survive logging out and back in and set value to no.
 
 Restart Iterm2 and voilà touch ID authentication will work on Iterm2.
+
+## Special Thanks
+
+Thanks to [josean-dev](https://github.com/josean-dev) for the insppiration of the nvim config.
