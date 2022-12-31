@@ -98,6 +98,12 @@ export PATH="$GOPATH/bin:$PATH"
 # Rust
 source "$HOME/.cargo/env"
 
+# Ruby
+if [ -d "/usr/local/opt/ruby/bin" ]; then
+  export PATH=/usr/local/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
+
 # Flutter
 export PATH="$PATH:$HOME/dev/sdks/flutter/bin"
 
@@ -105,12 +111,6 @@ export PATH="$PATH:$HOME/dev/sdks/flutter/bin"
 [ -s "/Users/a.boehm/.bun/_bun" ] && source "/Users/a.boehm/.bun/_bun"
 export BUN_INSTALL="/Users/a.boehm/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export LDFLAG=S"-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
-export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 # Default Exports
 export PATH="/usr/local/sbin:$PATH"

@@ -7,11 +7,17 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps
 ---------------------
 
+-- movement
+keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move current selected line(s) up
+keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move current selected line(s) down
+
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
