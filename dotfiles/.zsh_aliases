@@ -47,6 +47,7 @@ alias nrtc='npm run test:cov'
 alias nrtw='npm run test:watch'
 
 # PNPM
+alias pn='pnpm'
 alias pna='pnpm add'
 alias pnad='pnpm add -D'
 alias pnaf='pnpm add --filter '
@@ -60,6 +61,7 @@ alias pnup='pnpm update'
 alias pnupi='pnpm update -i'
 alias pnupil='pnpm update -iL'
 
+alias pne='pnpm exec'
 alias pnd='pnpm dlx'
 alias pnr='pnpm run'
 alias pnrafb='pnpm run affected build'
