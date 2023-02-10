@@ -108,8 +108,8 @@ fi
 export PATH="$PATH:$HOME/dev/sdks/flutter/bin"
 
 # Bun
-[ -s "/Users/a.boehm/.bun/_bun" ] && source "/Users/a.boehm/.bun/_bun"
-export BUN_INSTALL="/Users/a.boehm/.bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Default Exports
@@ -117,7 +117,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 # Run tools
-source /Users/a.boehm/Library/Application\ Support/org.dystroy.broot/launcher/bash/br
+source "$HOME/Library/Application Support/org.dystroy.broot/launcher/bash/br"
 
 # tabtab source for packages
 # uninstall by removing these lines
