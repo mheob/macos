@@ -88,7 +88,7 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 # PNPM
-export PNPM_HOME="/Users/a.boehm/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
 # Golang
