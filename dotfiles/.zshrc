@@ -98,12 +98,6 @@ export PATH="$GOPATH/bin:$PATH"
 # Rust
 source "$HOME/.cargo/env"
 
-# Ruby
-if [ -d "/usr/local/opt/ruby/bin" ]; then
-  export PATH=/usr/local/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
-
 # Flutter
 export PATH="$PATH:$HOME/dev/sdks/flutter/bin"
 
