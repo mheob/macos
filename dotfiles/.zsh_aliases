@@ -31,6 +31,7 @@ alias vim='nvim'
 alias gmc='gitmoji -c'
 alias gcz='npx cz'
 alias gstau='git stash push -u'
+alias ggpf='git push origin $(current_branch) --force-with-lease --force-if-includes'
 
 # Netlify
 alias ntl='netlify'
