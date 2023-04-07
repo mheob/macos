@@ -20,6 +20,7 @@ alias bic='brew install --cask'
 alias bl='brew list; echo'
 alias bu='brew uninstall --zap'
 alias cleanup='brew autoremove && brew cleanup -s --prune=7'
+alias update='brew update && brew upgrade && brew cu --all --yes --cleanup'
 
 # Xcode
 alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install'
@@ -29,23 +30,12 @@ alias vim='nvim'
 
 # Git
 alias gmc='gitmoji -c'
-alias gcz='npx cz'
+alias gcz='cz'
 alias gstau='git stash push -u'
 alias ggpf='git push origin $(current_branch) --force-with-lease --force-if-includes'
 
 # Netlify
 alias ntl='netlify'
-
-# NPM
-alias npm-po='npm i --package-lock-only'
-alias ni='npm i -E'
-
-alias nrc='npm run commit'
-alias nre='npm run export'
-alias nrl='npm run lint'
-alias nrs='npm run start'
-alias nrtc='npm run test:cov'
-alias nrtw='npm run test:watch'
 
 # PNPM
 alias pn='pnpm'
@@ -61,46 +51,16 @@ alias pno='pnpm outdated'
 alias pnup='pnpm update'
 alias pnupi='pnpm update -i'
 alias pnupil='pnpm update -iL'
-
 alias pne='pnpm exec'
 alias pnd='pnpm dlx'
 alias pnr='pnpm run'
-alias pnrafb='pnpm run affected build'
-alias pnrafe='pnpm run affected e2e'
-alias pnrafl='pnpm run affected lint'
-alias pnraft='pnpm run affected test'
 alias pnrb='pnpm run build'
-alias pnrc='pnpm run commit'
-alias pnrcc='pnpm run check-ci'
 alias pnrcs='pnpm run changeset'
 alias pnrf='pnpm run format'
 alias pnrl='pnpm run lint'
 alias pnrd='pnpm run dev'
 alias pnrs='pnpm run start'
 alias pnrt='pnpm run test'
-
-# Yarn
-alias ya='yarn add'
-alias yad='yarn add -D'
-alias yaw='yarn add -W'
-alias yadw='yarn add -W -D'
-alias ys='yarn start'
-alias yup='yarn up'
-alias yupl='yarn upgrade'
-
-alias yc='yarn commit'
-alias ycc='yarn check-ci'
-alias ycs='yarn changeset'
-alias ye='yarn export'
-alias yl='yarn lint'
-alias ytc='yarn test:cov'
-alias ytw='yarn test:watch'
-alias yrmw='yarn remove -W'
-alias yafb='yarn affected:build'
-alias yafe='yarn affected:e2e'
-alias yafl='yarn affected:lint'
-alias yaft='yarn affected:test'
-alias yafsb='yarn affected:build-storybook'
 
 # Golang
 alias cobra='cobra-cli'

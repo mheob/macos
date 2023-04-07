@@ -53,15 +53,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # pnpm
-export PNPM_HOME="/Users/ab/Library/pnpm"
-case ":$PATH:" in
-*":$PNPM_HOME:"*) ;;
-*) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 
 # Golang
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
+
+# Java
+export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 
 # Default Exports
 export PATH="/usr/local/sbin:$PATH"
@@ -76,3 +76,4 @@ source "$HOME/.config/broot/launcher/bash/br"
 
 # Starship
 eval "$(starship init zsh)"
+
