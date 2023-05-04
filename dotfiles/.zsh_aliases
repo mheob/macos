@@ -17,7 +17,9 @@ alias trm='trash'
 # Brew
 alias bi='brew install'
 alias bic='brew install --cask'
+alias binfo="brew info"
 alias bl='brew list; echo'
+alias bs='brew search'
 alias bu='brew uninstall --zap'
 alias cleanup='brew autoremove && brew cleanup -s --prune=7'
 alias update='brew update && brew upgrade && brew cu --all --yes --cleanup'
