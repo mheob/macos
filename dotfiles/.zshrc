@@ -85,6 +85,9 @@ export PATH="$GOPATH/bin:$PATH"
 # Java
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 
+# Python
+export PATH="$HOME/Library/Python/3.11/bin:$PATH"
+
 # Default Exports
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
