@@ -144,11 +144,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "files.watcherExclude": {
-    "**/.yarn/**": true,
-    "**/node_modules/**": true,
-    "**/vendor/**": true
-  },
+  "files.watcherExclude": {},
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -179,6 +175,11 @@
   "workbench.tree.indent": 12,
 
   // Extensions
+  "advancedNewFile.exclude": {
+    "**/.yarn/**": true,
+    "**/node_modules/**": true,
+    "**/vendor/**": true
+  },
   "better-comments.tags": [
     { "tag": "!", "color": "#ff2d00" },
     { "tag": "?", "color": "#3498db" },
@@ -383,6 +384,7 @@
     "codewithkyle",
     "comarko",
     "commandline",
+    "commercetools",
     "commitlint",
     "commitlintrc",
     "compat",
@@ -455,8 +457,11 @@
     "dtinth",
     "earum",
     "easyfeedback",
+    "ecma",
     "editorconfig",
     "Einmalteilnahme",
+    "einz",
+    "EINZA",
     "elementor",
     "Elesgo",
     "elit",
@@ -714,6 +719,7 @@
     "nestjs",
     "netlify",
     "neuwied",
+    "nextauth",
     "NEXTAUTH",
     "nextjs",
     "nexuspush",
