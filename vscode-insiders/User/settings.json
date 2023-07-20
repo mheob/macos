@@ -68,7 +68,7 @@
   "emmet.includeLanguages": { "velocity": "html" },
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
-  "javascript.preferences.importModuleSpecifier": "project-relative",
+  // "javascript.preferences.importModuleSpecifier": "project-relative",
   "javascript.preferences.useAliasesForRenames": false,
   "javascript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -127,7 +127,7 @@
     "*": "${basename}.*.${extname}"
   },
   "explorer.incrementalNaming": "smart",
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "files.associations": {
     "*.__tmpl__": "handlebars",
     "*.env": "env",
@@ -149,9 +149,7 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  // "terminal.integrated.env.osx": {
-  //   "FIG_NEW_SESSION": "1"
-  // },
+  "terminal.integrated.env.osx": {},
   "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.profiles.osx": {
@@ -1102,6 +1100,5 @@
     "zipcode",
     "zopfli",
     "zzgl"
-  ],
-  "terminal.integrated.env.osx": {}
+  ]
 }
