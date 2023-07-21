@@ -12,7 +12,7 @@ $fill\
 $nodejs\
 $golang\
 $python\
-$cmd_duration $jobs $time"""
+$cmd_duration $jobs $datetime $time"""
 
 add_newline = false
 
@@ -75,3 +75,4 @@ format = "[$symbol]($style)"
 disabled = false
 style = "bold white"
 format = "[$time]($style)"
+time_format = "%F %T"
