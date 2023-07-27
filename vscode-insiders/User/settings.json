@@ -72,13 +72,16 @@
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
   "javascript.preferences.importModuleSpecifier": "shortest",
-  "javascript.preferences.useAliasesForRenames": false,
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
   "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.useAliasesForRenames": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.importModuleSpecifier": "shortest",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "path-intellisense.extensionOnImport": false,
 
   // Editor
   "diffEditor.ignoreTrimWhitespace": false,
