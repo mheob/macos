@@ -298,10 +298,6 @@
     "command": "workbench.action.focusNextGroup"
   },
   {
-    "key": "insert",
-    "command": "nx.generate.ui"
-  },
-  {
     "key": "cmd+]",
     "command": "editor.action.inlineSuggest.showNext",
     "when": "inlineSuggestionVisible && !editorReadonly"
