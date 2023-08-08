@@ -27,6 +27,9 @@ alias update='brew update && brew upgrade && brew cu --all --yes --cleanup'
 # Xcode
 alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install'
 
+# Topgrade
+alias tg='topgrade'
+
 # Neovim
 alias vim='nvim'
 
