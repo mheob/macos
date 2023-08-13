@@ -389,7 +389,7 @@
     "command": "-workbench.action.moveEditorToPreviousGroup"
   },
   {
-    "key": "shift+alt+t",
+    "key": "ctrl+cmd+t",
     "command": "surround.with",
     "when": "editorHasSelection"
   },
