@@ -128,7 +128,7 @@
             "comment.block.documentation punctuation.definition.bracket.curly"
           ],
           "settings": {
-            "foreground": "#737e83",
+            "foreground": "#919497",
             "fontStyle": "italic"
           }
         },
@@ -141,7 +141,7 @@
             "string.comment.buffered.block.pug"
           ],
           "settings": {
-            "foreground": "#737e83"
+            "foreground": "#919497"
           }
         },
         {
@@ -151,7 +151,7 @@
             "comment.block.documentation entity.name.type.instance.phpdoc"
           ],
           "settings": {
-            "foreground": "#9696ffaa"
+            "foreground": "#9696ffca"
           }
         },
         {
@@ -161,7 +161,7 @@
             "comment.block.documentation variable.other.phpdoc"
           ],
           "settings": {
-            "foreground": "#FFDC96aa"
+            "foreground": "#FFDC96ca"
           }
         },
         {
@@ -171,7 +171,7 @@
             "comment.block.documentation punctuation.definition.block.tag.jsdoc"
           ],
           "settings": {
-            "foreground": "#00b3ffaa"
+            "foreground": "#00b3ffca"
           }
         }
       ]
