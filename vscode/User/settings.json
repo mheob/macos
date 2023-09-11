@@ -72,6 +72,7 @@
   "javascript.preferences.useAliasesForRenames": false,
   "javascript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.sortOnSave.enable": true,
   "typescript.preferences.importModuleSpecifier": "project-relative",
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.preferences.quoteStyle": "single",
