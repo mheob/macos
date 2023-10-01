@@ -29,6 +29,9 @@
       "source.organizeImports": false
     }
   },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -68,15 +71,17 @@
   "emmet.includeLanguages": { "velocity": "html" },
   "go.lintTool": "golangci-lint",
   "go.lintFlags": ["--fast"],
-  "javascript.preferences.importModuleSpecifier": "project-relative",
-  "javascript.preferences.useAliasesForRenames": false,
+  "javascript.preferences.importModuleSpecifier": "shortest",
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
   "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.useAliasesForRenames": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "json.sortOnSave.enable": true,
-  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.preferences.quoteStyle": "single",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "path-intellisense.extensionOnImport": false,
 
   // Editor
   "diffEditor.ignoreTrimWhitespace": false,
@@ -84,11 +89,11 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
-    "source.organizeImports": true
+    "source.organizeImports": false
   },
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line",
-  "editor.fontFamily": "'Fira Code iScript', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "editor.fontFamily": "'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
   "editor.fontLigatures": true,
   "editor.fontSize": 17,
   "editor.formatOnSave": true,
@@ -113,6 +118,65 @@
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[Night Wolf (black)]": {
+      "textMateRules": [
+        {
+          "name": "Comment",
+          "scope": [
+            "comment",
+            "comment.block.documentation punctuation.definition.bracket.curly"
+          ],
+          "settings": {
+            "foreground": "#919497",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "name": "Double-Slashed Comment",
+          "scope": [
+            "comment.line.double-slash",
+            "punctuation.definition.comment",
+            "punctuation.whitespace.comment",
+            "string.comment.buffered.block.pug"
+          ],
+          "settings": {
+            "foreground": "#919497"
+          }
+        },
+        {
+          "name": "Data Type in commented documentation",
+          "scope": [
+            "comment.block.documentation entity.name.type.instance.jsdoc",
+            "comment.block.documentation entity.name.type.instance.phpdoc"
+          ],
+          "settings": {
+            "foreground": "#9696ffca"
+          }
+        },
+        {
+          "name": "Variables in commented documentation",
+          "scope": [
+            "comment.block.documentation variable.other.jsdoc",
+            "comment.block.documentation variable.other.phpdoc"
+          ],
+          "settings": {
+            "foreground": "#FFDC96ca"
+          }
+        },
+        {
+          "name": "@tags in commented documentation",
+          "scope": [
+            "comment.block.documentation storage.type.class.jsdoc",
+            "comment.block.documentation punctuation.definition.block.tag.jsdoc"
+          ],
+          "settings": {
+            "foreground": "#00b3ffca"
+          }
+        }
+      ]
+    }
+  },
   "editor.useTabStops": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -128,7 +192,7 @@
     "*": "${basename}.*.${extname}"
   },
   "explorer.incrementalNaming": "smart",
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "files.associations": {
     "*.__tmpl__": "handlebars",
     "*.env": "env",
@@ -145,18 +209,12 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "files.watcherExclude": {
-    "**/.yarn/**": true,
-    "**/node_modules/**": true,
-    "**/vendor/**": true
-  },
+  "files.watcherExclude": {},
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  // "terminal.integrated.env.osx": {
-  //   "FIG_NEW_SESSION": "1"
-  // },
+  "terminal.integrated.env.osx": {},
   "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.profiles.osx": {
@@ -180,6 +238,11 @@
   "workbench.tree.indent": 12,
 
   // Extensions
+  "advancedNewFile.exclude": {
+    "**/.yarn/**": true,
+    "**/node_modules/**": true,
+    "**/vendor/**": true
+  },
   "better-comments.tags": [
     { "tag": "!", "color": "#ff2d00" },
     { "tag": "?", "color": "#3498db" },
@@ -189,7 +252,7 @@
     { "tag": "todo", "color": "#ff8c00" },
     { "tag": "discuss", "color": "#add8e6" }
   ],
-  "console-ninja.featureSet": "Pro",
+  "console-ninja.featureSet": "Community",
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
@@ -258,6 +321,7 @@
     "**/vendor**"
   ],
   "cSpell.userWords": [
+    "ABCDEFHIJKLMNOPQRSTUVWXYZ",
     "Abdeckungswerkzeug",
     "Abdeckungsziele",
     "ABSPATH",
@@ -302,6 +366,7 @@
     "autofetch",
     "autoload",
     "autoloadable",
+    "autoloader",
     "Autoloader",
     "autoloading",
     "autom",
@@ -383,6 +448,7 @@
     "codewithkyle",
     "comarko",
     "commandline",
+    "commercetools",
     "commitlint",
     "commitlintrc",
     "compat",
@@ -448,6 +514,7 @@
     "doku",
     "doloribus",
     "dompurify",
+    "donot",
     "Driesch",
     "Dropdown",
     "DSGVO",
@@ -455,8 +522,11 @@
     "dtinth",
     "earum",
     "easyfeedback",
+    "ecma",
     "editorconfig",
     "Einmalteilnahme",
+    "einz",
+    "EINZA",
     "elementor",
     "Elesgo",
     "elit",
@@ -553,6 +623,7 @@
     "grayscale",
     "grecaptcha",
     "greenvinyl",
+    "groq",
     "gruseligere",
     "gulpfile",
     "gungsgrund",
@@ -570,6 +641,7 @@
     "hiddendiv",
     "hkdobrev",
     "hocs",
+    "hookform",
     "hookz",
     "hotfix",
     "Hreflang",
@@ -714,6 +786,7 @@
     "nestjs",
     "netlify",
     "neuwied",
+    "nextauth",
     "NEXTAUTH",
     "nextjs",
     "nexuspush",
@@ -763,6 +836,7 @@
     "parens",
     "partialize",
     "participations",
+    "pascalcase",
     "pauseplay",
     "Paymentanbieter",
     "pcss",
@@ -774,6 +848,7 @@
     "phpcodesniffer",
     "phpcompatibility",
     "phpcs",
+    "phpdoc",
     "phpdotenv",
     "phpunit",
     "picsum",
@@ -888,6 +963,7 @@
     "Schnitz",
     "Schnupperstunde",
     "schungspflicht",
+    "scregistry",
     "scrollable",
     "scrollbar",
     "scroller",
@@ -984,12 +1060,15 @@
     "theming",
     "Thiel",
     "tmpl",
+    "toastify",
     "Todos",
     "Toom",
     "Trackingcode",
     "Trello",
     "Triesch",
     "Trimm",
+    "triplesense",
+    "Triplesense",
     "trivago",
     "truetype",
     "tsconfigs",
@@ -1079,11 +1158,13 @@
     "xmlns",
     "Xpertus",
     "xtra",
+    "xtrasmall",
     "XXXXXSGIXXME",
     "yarnhook",
     "yarnpkg",
     "Yii's",
     "yiisoft",
+    "youtube",
     "yzhang",
     "zapier",
     "zeeflex",
@@ -1091,6 +1172,5 @@
     "zipcode",
     "zopfli",
     "zzgl"
-  ],
-  "terminal.integrated.env.osx": {}
+  ]
 }
