@@ -228,7 +228,7 @@
   "window.confirmBeforeClose": "always",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
   "window.commandCenter": true,
-  "workbench.colorTheme": "Night Wolf (black)",
+  "workbench.colorTheme": "Houston",
   "workbench.editor.revealIfOpen": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.layoutControl.enabled": true,
