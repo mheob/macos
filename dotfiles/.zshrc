@@ -1,3 +1,6 @@
+# Fig pre block - Keep at the top of this file
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
 # Prefer US English and use UTF-8.
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -101,4 +104,7 @@ source "$HOME/.config/broot/launcher/bash/br"
 
 # Starship
 eval "$(starship init zsh)"
+
+# Fig post block - Keep at the bottom of this file
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
