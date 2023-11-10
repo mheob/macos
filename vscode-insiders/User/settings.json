@@ -93,8 +93,9 @@
   },
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line",
-  "editor.fontFamily": "'Fira Code iScript', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  // "editor.fontLigatures": true,
+  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
   "editor.fontSize": 17,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
@@ -118,15 +119,76 @@
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.useTabStops": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js, ${capture}.*.js, ${capture}.*.ts, ${capture}.*.tsx",
+    "*.ts": "${capture}.js, ${capture}.*.jsx, ${capture}.*.tsx",
+    "*.tsx": "${capture}.ts, ${capture}.*.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, pnpm-lock.yaml, pnpm-workspace.yaml, yarn.lock",
+    "*": "${basename}.*.${extname}"
+  },
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.visible": 1,
+  "files.associations": {
+    "*.__tmpl__": "handlebars",
+    "*.env": "env",
+    "*.env.*": "env",
+    "*.mdx": "mdx"
+  },
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {},
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.location": "left",
+  "window.confirmBeforeClose": "always",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Houston",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.editor.revealIfOpen": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.layoutControl.enabled": true,
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.indent": 12,
+
+  // Theming
   "editor.tokenColorCustomizations": {
     "[Night Wolf (black)]": {
       "textMateRules": [
         {
           "name": "Comment",
-          "scope": [
-            "comment",
-            "comment.block.documentation punctuation.definition.bracket.curly"
-          ],
+          "scope": ["comment", "comment.block.documentation punctuation.definition.bracket.curly"],
           "settings": {
             "foreground": "#919497",
             "fontStyle": "italic"
@@ -177,65 +239,13 @@
       ]
     }
   },
-  "editor.useTabStops": true,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.expand": false,
-  "explorer.fileNesting.patterns": {
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js, ${capture}.*.js, ${capture}.*.ts, ${capture}.*.tsx",
-    "*.ts": "${capture}.js, ${capture}.*.jsx, ${capture}.*.tsx",
-    "*.tsx": "${capture}.ts, ${capture}.*.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, pnpm-lock.yaml, pnpm-workspace.yaml, yarn.lock",
-    "*": "${basename}.*.${extname}"
-  },
-  "explorer.incrementalNaming": "smart",
-  "explorer.openEditors.visible": 1,
-  "files.associations": {
-    "*.__tmpl__": "handlebars",
-    "*.env": "env",
-    "*.env.*": "env",
-    "*.mdx": "mdx"
-  },
-  "files.eol": "\n",
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true
-  },
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "files.watcherExclude": {},
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.env.osx": {},
-  "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.profiles.osx": {
-    "zsh": {
-      "path": "zsh",
-      "args": ["-l"]
+  "workbench.colorCustomizations": {
+    "[Houston]": {
+      "editor.selectionBackground": "#b58bc464",
+      "editor.selectionHighlightBackground": "#b1d0ee26",
+      "editor.selectionHighlightBorder": "#708499"
     }
   },
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.tabs.location": "left",
-  "window.confirmBeforeClose": "always",
-  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "window.commandCenter": true,
-  "workbench.colorTheme": "Night Wolf (black)",
-  "workbench.editor.revealIfOpen": false,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.layoutControl.enabled": true,
-  "workbench.productIconTheme": "material-product-icons",
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.indent": 12,
 
   // Extensions
   "advancedNewFile.exclude": {
@@ -252,7 +262,7 @@
     { "tag": "todo", "color": "#ff8c00" },
     { "tag": "discuss", "color": "#add8e6" }
   ],
-  "console-ninja.featureSet": "Pro",
+  "console-ninja.featureSet": "Community",
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
@@ -279,21 +289,8 @@
   "sortJSON.excludedFiles": ["package.json", "**/package.json"],
   "svelte.enable-ts-plugin": true,
   "svg.preview.mode": "svg",
-  "todo-tree.filtering.excludeGlobs": [
-    "**/node_modules/**",
-    "**/vendor/**",
-    "**/.github/**"
-  ],
-  "todo-tree.general.tags": [
-    "BUG",
-    "DISCUSS",
-    "FIXIT",
-    "FIXME",
-    "TODO",
-    "VOTE",
-    "[ ]",
-    "[x]"
-  ],
+  "todo-tree.filtering.excludeGlobs": ["**/node_modules/**", "**/vendor/**", "**/.github/**"],
+  "todo-tree.general.tags": ["BUG", "DISCUSS", "FIXIT", "FIXME", "TODO", "VOTE", "[ ]", "[x]"],
   "todo-tree.general.tagGroups": {
     "BUG": ["BUG", "FIXIT", "FIXME"]
   },
@@ -419,6 +416,7 @@
     "buildable",
     "Buildable",
     "builtins",
+    "bunx",
     "buttonface",
     "cacheable",
     "camelcase",
@@ -438,6 +436,7 @@
     "chmod",
     "chunkhash",
     "Classen",
+    "clsx",
     "clui",
     "cmyk",
     "codecov",
@@ -635,6 +634,7 @@
     "haspopup",
     "Heatmap",
     "hellonico",
+    "heroicons",
     "herz",
     "herzgmbh",
     "hexcode",
