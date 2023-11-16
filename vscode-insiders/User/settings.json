@@ -188,7 +188,10 @@
       "textMateRules": [
         {
           "name": "Comment",
-          "scope": ["comment", "comment.block.documentation punctuation.definition.bracket.curly"],
+          "scope": [
+            "comment",
+            "comment.block.documentation punctuation.definition.bracket.curly"
+          ],
           "settings": {
             "foreground": "#919497",
             "fontStyle": "italic"
@@ -289,8 +292,21 @@
   "sortJSON.excludedFiles": ["package.json", "**/package.json"],
   "svelte.enable-ts-plugin": true,
   "svg.preview.mode": "svg",
-  "todo-tree.filtering.excludeGlobs": ["**/node_modules/**", "**/vendor/**", "**/.github/**"],
-  "todo-tree.general.tags": ["BUG", "DISCUSS", "FIXIT", "FIXME", "TODO", "VOTE", "[ ]", "[x]"],
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules/**",
+    "**/vendor/**",
+    "**/.github/**"
+  ],
+  "todo-tree.general.tags": [
+    "BUG",
+    "DISCUSS",
+    "FIXIT",
+    "FIXME",
+    "TODO",
+    "VOTE",
+    "[ ]",
+    "[x]"
+  ],
   "todo-tree.general.tagGroups": {
     "BUG": ["BUG", "FIXIT", "FIXME"]
   },
