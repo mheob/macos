@@ -77,6 +77,12 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+# Broot
+source "$HOME/.config/broot/launcher/bash/br"
+
+# Curl
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
 # .NET
 export PATH="/usr/local/share/dotnet:$PATH"
 
@@ -97,9 +103,6 @@ export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 # Default Exports
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
-
-# Run tools
-source "$HOME/.config/broot/launcher/bash/br"
 
 # tabtab source for packages
 # uninstall by removing these lines
