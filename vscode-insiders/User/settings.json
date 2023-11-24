@@ -265,7 +265,7 @@
     { "tag": "todo", "color": "#ff8c00" },
     { "tag": "discuss", "color": "#add8e6" }
   ],
-  "console-ninja.featureSet": "Community",
+  "console-ninja.featureSet": "Pro",
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
@@ -1188,5 +1188,6 @@
     "zipcode",
     "zopfli",
     "zzgl"
-  ]
+  ],
+  "pieces.setCopilotLocation": true
 }
