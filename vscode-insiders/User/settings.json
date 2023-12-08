@@ -18,7 +18,7 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "[go.mod]": {
@@ -26,7 +26,7 @@
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "golang.go",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": false
+      "source.organizeImports": "never"
     }
   },
   "[handlebars]": {
@@ -78,8 +78,9 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.importModuleSpecifier": "shortest",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
-  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
   "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.useAliasesForRenames": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "path-intellisense.extensionOnImport": false,
 
@@ -88,8 +89,8 @@
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": false
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
   },
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line",
@@ -107,6 +108,7 @@
   "editor.minimap.maxColumn": 100,
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
+  "editor.occurrencesHighlight": "multiFile",
   "editor.padding.top": 10,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
@@ -167,6 +169,7 @@
       "args": ["-l"]
     }
   },
+  "terminal.integrated.stickyScroll.enabled": true,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.tabs.location": "left",
   "window.confirmBeforeClose": "always",
@@ -284,6 +287,7 @@
     "default": true,
     "MD010": { "code_blocks": false }
   },
+  "pieces.setCopilotLocation": true,
   "prettier.documentSelectors": ["**/*.astro"],
   "projectManager.git.baseFolders": ["~/dev/customer", "~/dev"],
   "projectManager.git.maxDepthRecursion": 2,
@@ -848,6 +852,7 @@
     "optimated",
     "optipng",
     "overorder",
+    "Pallinder",
     "Palo",
     "paren",
     "parens",
@@ -939,6 +944,7 @@
     "querystring",
     "radash",
     "Raleway",
+    "randomdata",
     "Ransbach",
     "ratione",
     "RBGA",
@@ -1189,6 +1195,5 @@
     "zipcode",
     "zopfli",
     "zzgl"
-  ],
-  "pieces.setCopilotLocation": true
+  ]
 }
