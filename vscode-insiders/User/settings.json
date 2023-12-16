@@ -102,6 +102,7 @@
   "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.enabled": true,
   "editor.inlineSuggest.showToolbar": "always",
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.lineHeight": 0,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
