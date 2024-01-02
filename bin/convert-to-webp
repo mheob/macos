@@ -1,0 +1,35 @@
+#!/bin/sh
+
+unset dir
+
+quality=70
+
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+  echo
+  echo "Usage:   convert-to-webp [option] [destination]"
+  echo "Example: convert-to-webp -q 50 ~/Downloads"
+  echo
+  echo "Options:"
+  echo "  -q  --quality   The quality between 0 and 100 (default 70)"
+  echo "  -h  --help      This help"
+  exit 1
+elif [ "$1" = "-q" ] || [ "$1" = "--quality" ]; then
+  quality=$2
+  dir=$3
+else
+  dir=$1
+fi
+
+if [ -z "$dir" ]; then
+  echo
+  read -p "Where are your images located? Provide folder: " dir
+fi
+
+echo
+
+for file in "$dir"/*; do
+  ext=${file##*.}
+  if [ "$ext" = "webp" ]; then continue; fi
+  filename=$(basename $file .$ext)
+  cwebp -q $quality $file -o $filename".webp"
+done
