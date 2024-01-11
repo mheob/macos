@@ -263,12 +263,13 @@
   "better-comments.tags": [
     { "tag": "!", "color": "#ff2d00" },
     { "tag": "?", "color": "#3498db" },
-    { "tag": "I:", "color": "#15a2b8" },
+    { "tag": "i:", "color": "#15a2b8" },
     { "tag": "//", "color": "#474747", "strikethrough": true },
     { "tag": "fixme", "color": "#ff4d00" },
     { "tag": "todo", "color": "#ff8c00" },
     { "tag": "discuss", "color": "#add8e6" }
   ],
+  "cody.commandCodeLenses": true,
   "console-ninja.featureSet": "Pro",
   "github.copilot.enable": {
     "*": true,
@@ -468,6 +469,7 @@
     "codeql",
     "codesniffer",
     "codewithkyle",
+    "cody",
     "comarko",
     "commandline",
     "commercetools",
@@ -506,6 +508,7 @@
     "Dashicons",
     "datapunt",
     "datasheet",
+    "datasource",
     "datetime",
     "dayjs",
     "dbaeumer",
@@ -718,6 +721,7 @@
     "keyframes",
     "keymaps",
     "keypress",
+    "keyvault",
     "kiapp",
     "Klassenmembern",
     "kleur",
@@ -1206,6 +1210,5 @@
     "zipcode",
     "zopfli",
     "zzgl"
-  ],
-  "cody.commandCodeLenses": true
+  ]
 }
