@@ -391,5 +391,9 @@
   {
     "key": "ctrl+cmd+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "codium.open_command_menu"
   }
 ]
