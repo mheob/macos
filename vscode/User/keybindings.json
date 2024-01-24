@@ -395,5 +395,15 @@
   {
     "key": "alt+cmd+c",
     "command": "codium.open_command_menu"
+  },
+  {
+    "key": "ctrl+cmd+v",
+    "command": "pieces-vscode.paste",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-pieces-vscode.paste",
+    "when": "editorTextFocus"
   }
 ]
