@@ -405,5 +405,15 @@
     "key": "cmd+v",
     "command": "-pieces-vscode.paste",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+c",
+    "command": "pieces-vscode.copy",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-pieces-vscode.copy",
+    "when": "editorTextFocus"
   }
 ]
