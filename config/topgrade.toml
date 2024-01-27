@@ -3,7 +3,7 @@
 #assume_yes = true
 
 # Disable specific steps - same options as the command line flag
-disable = ["ruby_gems"]
+disable = ["ruby_gems", "git_repos"]
 
 # Ignore failures for these steps
 #ignore_failures = ["powershell"]
