@@ -271,6 +271,12 @@
   ],
   "cody.commandCodeLenses": true,
   "console-ninja.featureSet": "Pro",
+  "console-ninja.output.showLogsFromLogPointsOnly": true,
+  "console-ninja.output.showLogsFromMultipleRunningToolsTogether": true,
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "live-server-extension": true,
+    "live-preview-extension": true
+  },
   "github.copilot.enable": {
     "*": true,
     "yaml": true,

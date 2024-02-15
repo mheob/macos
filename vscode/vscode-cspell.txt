@@ -1,2 +1,12 @@
 ABCDEFHIJKLMNOPQRSTUVWXYZ
+Astro
 Buchbarkeit
+Chakra
+commitlint
+Contentful
+itsb
+Mantine
+mheob
+Shadcn
+Strapi
+Xing
