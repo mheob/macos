@@ -45,13 +45,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.trimTrailingWhitespace": false
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -63,7 +64,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -85,21 +86,26 @@
   "path-intellisense.extensionOnImport": false,
 
   // Editor
-  "diffEditor.ignoreTrimWhitespace": false,
+  "breadcrumbs.filePath": "off",
+  "chat.editor.fontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "debug.console.fontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "diffEditor.ignoreTrimWhitespace": true,
   "editor.accessibilitySupport": "off",
-  "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeLensFontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "line",
-  "editor.fontFamily": "'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
-  // "editor.fontLigatures": true,
-  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
-  "editor.fontSize": 17,
+  "editor.fontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  // "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
+  "editor.inlayHints.fontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
   "editor.inlineSuggest.enabled": true,
   "editor.inlineSuggest.showToolbar": "always",
   "editor.inlineSuggest.suppressSuggestions": true,
@@ -114,6 +120,8 @@
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
   "editor.rulers": [100],
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
   "editor.semanticHighlighting.enabled": true,
   "editor.stickyScroll.enabled": true,
   "editor.suggest.insertMode": "insert",
@@ -124,6 +132,7 @@
   "editor.tabSize": 2,
   "editor.useTabStops": true,
   "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -146,11 +155,41 @@
   },
   "files.eol": "\n",
   "files.exclude": {
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.cspell.json": true,
+    "**/.editorconfig": true,
+    "**/.env*": true,
     "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true
+    "**/.github": true,
+    "**/.gitignore": true,
+    "**/.husky": true,
+    "**/.next": true,
+    "**/.npmrc": true,
+    "**/.nvmrc": true,
+    "**/.sanity": true,
+    "**/.todo": true,
+    "**/.turbo": true,
+    "**/.vercel": true,
+    "**/.vscode": true,
+    "**/bun.lockb": true,
+    "**/commitlint.config.*": true,
+    "**/eslint.config.*": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/pnpm-workspace.yaml": true,
+    "**/next.config.*": true,
+    "**/next-env.d.ts": true,
+    "**/postcss.config.*": true,
+    "**/prettier.config.*": true,
+    "**/README.md": true,
+    "**/sonar-project.properties": true,
+    "**/tailwind.config.*": true,
+    "**/tsconfig.json": true,
+    "**/turbo.json": true,
+    "**/vite-env.d.ts": true
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -158,12 +197,17 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "markdown.preview.fontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "markdown.preview.fontSize": 15,
+  "notebook.output.fontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "scm.inputFontFamily": "'Geist Mono', 'Monaspace Argon', 'Cascadia Code', 'VictorMono Nerd Font', 'Fira Code iScript', 'FiraCode Nerd Font Mono', 'Operator Mono Lig', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
+    "FIG_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
   },
-  "terminal.integrated.fontFamily": "'Hack Nerd Font Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "'GeistMono Nerd Font', 'Hack Nerd Font Mono', Consolas, 'Courier New', monospace, 'Segoe UI Emoji'",
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.osx": {
     "zsh": {
       "path": "zsh",
@@ -173,18 +217,20 @@
   "terminal.integrated.stickyScroll.enabled": true,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.tabs.location": "left",
+  "window.commandCenter": false,
   "window.confirmBeforeClose": "always",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-  "window.commandCenter": true,
-  "workbench.colorTheme": "Houston",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0.75,
+  "workbench.colorTheme": "Aura Dark",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.revealIfOpen": false,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "moxer-icons",
   "workbench.layoutControl.enabled": true,
   "workbench.productIconTheme": "material-product-icons",
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.indent": 12,
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 16,
 
   // Theming
   "editor.tokenColorCustomizations": {
@@ -247,6 +293,14 @@
     }
   },
   "workbench.colorCustomizations": {
+    "[Aura Dark]": {
+      "editor.background": "#110f17",
+      "terminal.background": "#110f17",
+      "activityBar.background": "#110f17",
+      "statusBar.background": "#110f17",
+      "editorGroupHeader.tabsBackground": "#110f17",
+      "tab.inactiveBackground": "#110f17"
+    },
     "[Houston]": {
       "editor.selectionBackground": "#b58bc464",
       "editor.selectionHighlightBackground": "#b1d0ee26",
@@ -260,6 +314,25 @@
     "**/node_modules/**": true,
     "**/vendor/**": true
   },
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 32
+  },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 12,
+      "y": 10
+    }
+  },
+  "apc.font.family": "Geist Mono",
+  "apc.monospace.font.family": "Geist Mono",
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 28,
+    "fontSize": 12
+  },
   "better-comments.tags": [
     { "tag": "!", "color": "#ff2d00" },
     { "tag": "?", "color": "#3498db" },
@@ -270,7 +343,6 @@
     { "tag": "discuss", "color": "#add8e6" }
   ],
   "cody.commandCodeLenses": true,
-  "console-ninja.featureSet": "Pro",
   "console-ninja.output.showLogsFromLogPointsOnly": true,
   "console-ninja.output.showLogsFromMultipleRunningToolsTogether": true,
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
@@ -287,7 +359,7 @@
   "go.toolsManagement.autoUpdate": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "markdown.extension.toc.levels": "2..2",
-  "markdown.preview.fontSize": 18,
+  // "markdown.preview.fontSize": 18,
   "markdown.preview.typographer": true,
   "markdown-preview-enhanced.codeBlockTheme": "one-dark.css",
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
@@ -352,5 +424,8 @@
     ".vscode",
     "**/vendor**"
   ],
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "security.promptForLocalFileProtocolHandling": false,
+  "sakai-icons.hidesExplorerArrows": false
 }

@@ -5,13 +5,13 @@ alias zshrestart='source ~/.zshrc'
 
 # General
 alias c='clear'
-alias l='exa --icons'
-alias ls='exa --icons'
-alias la='exa --all --icons'
-alias ll='exa --long --icons'
-alias lla='exa --all --long --icons'
-alias lsr='exa --recurse --icons'
-alias lst='exa --tree --icons'
+alias l='eza --icons'
+alias ls='eza --icons'
+alias la='eza --all --icons'
+alias ll='eza --long --icons'
+alias lla='eza --all --long --icons'
+alias lsr='eza --recurse --icons'
+alias lst='eza --tree --icons'
 alias trm='trash'
 
 # Brew
@@ -38,6 +38,7 @@ alias gmc='gitmoji -c'
 alias gcz='cz'
 alias gstau='git stash push -u'
 alias ggpf='git push origin $(current_branch) --force-with-lease --force-if-includes'
+unalias gk
 
 # Netlify
 alias ntl='netlify'
@@ -69,9 +70,6 @@ alias pnrt='pnpm run test'
 
 # Golang
 alias cobra='cobra-cli'
-
-# Fuck, a tool corrects errors in previous console commands
-eval $(thefuck --alias)
 
 # Flush Directory Service cache
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
