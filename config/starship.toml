@@ -10,11 +10,20 @@ $git_status\
 $git_metrics\
 $fill\
 $nodejs\
+$bun\
+$deno\
 $golang\
 $python\
-$cmd_duration $jobs $datetime $time"""
+$cmd_duration $jobs $datetime $time $line_break\
+$character"""
 
 add_newline = false
+
+[character]
+disabled = false
+success_symbol = '[❯](bold green) '
+error_symbol = '[✖](bold red) '
+
 
 [directory]
 style = "blue"
@@ -24,7 +33,7 @@ truncation_length = 6
 truncation_symbol = '…/'
 
 [line_break]
-disabled = true
+disabled = false
 
 [git_branch]
 symbol = " "
