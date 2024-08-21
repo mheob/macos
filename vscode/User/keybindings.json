@@ -278,19 +278,19 @@
     "command": "workbench.action.tasks.runTask"
   },
   {
-    "key": "alt+cmd+right",
+    "key": "ctrl+cmd+right",
     "command": "workbench.action.moveEditorToRightGroup"
   },
   {
-    "key": "alt+cmd+left",
+    "key": "ctrl+cmd+left",
     "command": "workbench.action.moveEditorToLeftGroup"
   },
   {
-    "key": "alt+cmd+up",
+    "key": "ctrl+cmd+up",
     "command": "workbench.action.moveEditorToAboveGroup"
   },
   {
-    "key": "alt+cmd+down",
+    "key": "ctrl+cmd+down",
     "command": "workbench.action.moveEditorToBelowGroup"
   },
   {

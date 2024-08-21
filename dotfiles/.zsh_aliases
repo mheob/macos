@@ -11,7 +11,7 @@ alias la='eza --all --icons'
 alias ll='eza --long --icons'
 alias lla='eza --all --long --icons'
 alias lsr='eza --recurse --icons'
-alias lst='eza --tree --icons'
+alias tree='eza --tree --icons'
 alias trm='trash'
 
 # Brew

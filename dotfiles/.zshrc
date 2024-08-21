@@ -37,7 +37,6 @@ plugins=(
   nvm
   vscode
   yarn
-  z
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -48,41 +47,41 @@ source $ZSH/oh-my-zsh.sh
 source "$HOME/.zsh_aliases"
 
 # FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # PNPM
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PATH:$PNPM_HOME"
 
 # NVM
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"                                       # This loads nvm
-#[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-#
-#autoload -U add-zsh-hook
-#load-nvmrc() {
-#  local nvmrc_path
-#  nvmrc_path="$(nvm_find_nvmrc)"
-#
-#  if [ -n "$nvmrc_path" ]; then
-#    local nvmrc_node_version
-#    nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-#
-#    if [ "$nvmrc_node_version" = "N/A" ]; then
-#      nvm install
-#    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
-#      nvm use
-#    fi
-#  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
-#    echo "Reverting to nvm default version"
-#    nvm use default
-#  fi
-#}
-#
-#add-zsh-hook chpwd load-nvmrc
-#load-nvmrc
-#
-#export PATH="$NVM_DIR/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"                                       # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local nvmrc_path
+  nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version
+    nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
+      nvm use
+    fi
+  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+export PATH="$NVM_DIR/bin:$PATH"
 
 # Console Ninja
 export PATH="$HOME/.console-ninja/.bin:$PATH"
@@ -120,6 +119,9 @@ export PATH="$HOME/bin:$PATH"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# zoxide
+eval "$(zoxide init zsh)"
 
 # Starship
 eval "$(starship init zsh)"
