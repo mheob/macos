@@ -3,6 +3,7 @@ ABSPATH
 antfu
 astro
 Astro
+astrojs
 autofetch
 autoloader
 Autoloader
@@ -16,6 +17,7 @@ Cascadia
 Chakra
 clsx
 cobertura
+Codespaces
 cody
 commitlint
 Consolas
@@ -49,6 +51,7 @@ phpcs
 phpdoc
 picocolors
 postbuild
+Preact
 predev
 prestart
 readdir

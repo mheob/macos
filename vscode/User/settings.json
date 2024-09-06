@@ -161,6 +161,7 @@
   "files.exclude": {
     "**/.DS_Store": false,
     "**/Thumbs.db": false,
+    "**/.astro": false,
     "**/.cspell.json": false,
     "**/.editorconfig": false,
     "**/.env*": false,
@@ -305,6 +306,9 @@
   "workbench.colorCustomizations": {
     "[Aura Dark]": {
       "editor.background": "#110f17",
+      "editor.selectionBackground": "#b58bc464",
+      "editor.selectionHighlightBackground": "#b1d0ee26",
+      "editor.selectionHighlightBorder": "#708499",
       "terminal.background": "#110f17",
       "activityBar.background": "#110f17",
       "statusBar.background": "#110f17",
@@ -427,16 +431,22 @@
   ],
   "cSpell.language": "en,de,lorem",
   "cSpell.ignorePaths": [
-    "**/package-lock.json",
-    "**/.yarn/**",
-    "**/node_modules/**",
-    "**/vscode-extension/**",
-    "**/.git/objects/**",
     ".vscode",
-    "**/vendor**"
+    "**/.git/objects/**",
+    "**/.yarn/**",
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vendor**",
+    "**/vscode-extension/**",
   ],
   "sonarlint.rules": {
     "php:S105": {
+      "level": "off"
+    },
+    "typescript:S4335": {
+      "level": "off"
+    },
+    "typescript:S1444": {
       "level": "off"
     }
   },
@@ -447,5 +457,9 @@
       "connectionId": "mheob"
     }
   ],
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "tailwind-fold.autoFold": false,
+  "cSpell.enableFiletypes": [
+    "astro"
+  ]
 }
