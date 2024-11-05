@@ -240,6 +240,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": true,
   "workbench.productIconTheme": "material-product-icons",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 16,
 
@@ -357,6 +358,7 @@
     { "tag": "discuss", "color": "#add8e6" }
   ],
   "cody.commandCodeLenses": true,
+  "console-ninja.featureSet": "Pro",
   "console-ninja.output.showLogsFromLogPointsOnly": true,
   "console-ninja.output.showLogsFromMultipleRunningToolsTogether": true,
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
@@ -388,9 +390,27 @@
   "projectManager.groupList": true,
   "redhat.telemetry.enabled": false,
   "sakai-icons.hidesExplorerArrows": false,
+  "sonarlint.connectedMode.connections.sonarcloud": [
+    {
+      "organizationKey": "mheob",
+      "connectionId": "mheob"
+    }
+  ],
+  "sonarlint.rules": {
+    "php:S105": {
+      "level": "off"
+    },
+    "typescript:S4335": {
+      "level": "off"
+    },
+    "typescript:S1444": {
+      "level": "off"
+    }
+  },
   "sortJSON.excludedFiles": ["package.json", "**/package.json"],
   "svelte.enable-ts-plugin": true,
   "svg.preview.mode": "svg",
+  "tailwind-fold.autoFold": false,
   "todo-tree.filtering.excludeGlobs": [
     "**/node_modules/**",
     "**/vendor/**",
@@ -429,6 +449,7 @@
       "addWords": true
     }
   ],
+  "cSpell.enableFiletypes": ["astro"],
   "cSpell.language": "en,de,lorem",
   "cSpell.ignorePaths": [
     ".vscode",
@@ -437,29 +458,6 @@
     "**/package-lock.json",
     "**/node_modules/**",
     "**/vendor**",
-    "**/vscode-extension/**",
-  ],
-  "sonarlint.rules": {
-    "php:S105": {
-      "level": "off"
-    },
-    "typescript:S4335": {
-      "level": "off"
-    },
-    "typescript:S1444": {
-      "level": "off"
-    }
-  },
-  "console-ninja.featureSet": "Pro",
-  "sonarlint.connectedMode.connections.sonarcloud": [
-    {
-      "organizationKey": "mheob",
-      "connectionId": "mheob"
-    }
-  ],
-  "workbench.sideBar.location": "right",
-  "tailwind-fold.autoFold": false,
-  "cSpell.enableFiletypes": [
-    "astro"
+    "**/vscode-extension/**"
   ]
 }

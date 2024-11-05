@@ -1,5 +1,6 @@
-# Q pre block. Keep at the top of this file.
+# Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+# Q pre block. Keep at the top of this file.
 # Fig pre block - Keep at the top of this file
 # Prefer US English and use UTF-8.
 export LANG=en_US.UTF-8
@@ -132,7 +133,8 @@ eval "$(starship init zsh)"
 [ -s "/Users/ab/.bun/_bun" ] && source "/Users/ab/.bun/_bun"
 
 # Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
-
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"

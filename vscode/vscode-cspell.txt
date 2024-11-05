@@ -26,6 +26,7 @@ Datasources
 datetime
 dompurify
 easyfeedback
+einza
 esbenp
 Fira
 FIXIT

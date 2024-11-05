@@ -24,6 +24,9 @@ alias bu='brew uninstall --zap'
 alias cleanup='brew autoremove && brew cleanup -s --prune=7'
 alias update='brew update && brew upgrade && brew cu --all --yes --cleanup'
 
+# Code
+alias code='cursor'
+
 # Xcode
 alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install'
 
@@ -35,13 +38,20 @@ alias vim='nvim'
 
 # Git
 alias gmc='gitmoji -c'
-alias gcz='cz'
+alias gcz='npx cz'
 alias gstau='git stash push -u'
 alias ggpf='git push origin $(current_branch) --force-with-lease --force-if-includes'
 unalias gk
 
 # Netlify
 alias ntl='netlify'
+
+# NI
+alias nrd='nr dev'
+alias nrs='nr start'
+alias nrt='nr test'
+alias nrtc='nr test:cov'
+alias nup='nlx taze -I'
 
 # PNPM
 alias pn='pnpm'

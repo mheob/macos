@@ -411,5 +411,23 @@
     "key": "cmd+c",
     "command": "-pieces-vscode.copy",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
   }
 ]
