@@ -46,7 +46,9 @@ Mantine
 mheob
 Monaspace
 moxer
+nvmrc
 outro
+owasp
 Parens
 phpcs
 phpdoc

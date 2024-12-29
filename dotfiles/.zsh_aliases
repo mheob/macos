@@ -46,11 +46,7 @@ unalias gk
 # Netlify
 alias ntl='netlify'
 
-# NI
-alias nrd='nr dev'
-alias nrs='nr start'
-alias nrt='nr test'
-alias nrtc='nr test:cov'
+# Taze
 alias nup='nlx taze -I'
 
 # PNPM
@@ -91,6 +87,9 @@ alias egrep='egrep --color=auto'
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Ghostty config
+alias ghconf='nvim ~/.config/ghostty/config'
 
 # Use package manager from its lockfile
 p() {
