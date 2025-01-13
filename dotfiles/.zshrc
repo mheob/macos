@@ -45,6 +45,16 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# ZSH Abbr (https://zsh-abbr.olets.dev)
+source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-abbr:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # Aliases and functions
 source "$HOME/.zsh_aliases"
 
