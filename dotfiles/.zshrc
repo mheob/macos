@@ -40,6 +40,7 @@ plugins=(
   vscode
   yarn
   zsh-autosuggestions
+  zsh-autosuggestions-abbreviations-strategy
   zsh-syntax-highlighting
 )
 
