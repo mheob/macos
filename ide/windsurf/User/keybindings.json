@@ -393,26 +393,6 @@
       "command": "codium.open_command_menu"
     },
     {
-      "key": "ctrl+cmd+v",
-      "command": "pieces-vscode.paste",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "cmd+v",
-      "command": "-pieces-vscode.paste",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "ctrl+cmd+c",
-      "command": "pieces-vscode.copy",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "cmd+c",
-      "command": "-pieces-vscode.copy",
-      "when": "editorTextFocus"
-    },
-    {
       "key": "alt+cmd+b",
       "command": "workbench.action.tasks.build",
       "when": "taskCommandsRegistered"
@@ -441,7 +421,11 @@
       "when": "cppSuggestion && !editorReadonly || inlineSuggestionVisible && !editorReadonly"
     },
     {
-      "key": "cmd+k",
-      "command": "windsurf.prioritized.command.open"
+      "key": "shift+cmd+,",
+      "command": "workbench.action.openWindsurfSettings"
+    },
+    {
+      "key": "cmd+,",
+      "command": "-workbench.action.openWindsurfSettings"
     }
   ]

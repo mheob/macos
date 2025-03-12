@@ -28,11 +28,13 @@ dompurify
 easyfeedback
 einza
 esbenp
+esbuild
 Fira
 FIXIT
 foxundermoon
 fubade
 geist
+GITHUB
 GOARCH
 golangci
 hotspot

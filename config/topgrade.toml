@@ -15,7 +15,7 @@
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["ruby_gems", "git_repos"]
+disable = ["gem", "ruby_gems", "git_repos"]
 
 # Ignore failures for these steps
 # ignore_failures = ["powershell"]
