@@ -115,7 +115,8 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
 # Java
-export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+#export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"

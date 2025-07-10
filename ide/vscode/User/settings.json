@@ -229,16 +229,19 @@
   "terminal.integrated.stickyScroll.enabled": true,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.tabs.location": "left",
+  "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.confirmBeforeClose": "always",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0.75,
-  "workbench.colorTheme": "Aura Dark",
+  "workbench.colorTheme": "Default Light Modern",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.revealIfOpen": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": true,
+  "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
@@ -393,7 +396,13 @@
   "sonarlint.connectedMode.connections.sonarcloud": [
     {
       "organizationKey": "mheob",
-      "connectionId": "mheob"
+      "connectionId": "mheob",
+      "region": "EU"
+    },
+    {
+      "organizationKey": "notarkasse-connected-campus",
+      "connectionId": "notarkasse-connected-campus",
+      "region": "EU"
     }
   ],
   "sonarlint.rules": {
@@ -449,7 +458,7 @@
       "addWords": true
     }
   ],
-  "cSpell.enableFiletypes": ["astro"],
+  "cSpell.enabledFileTypes": {"astro": true},
   "cSpell.language": "en,de,lorem",
   "cSpell.ignorePaths": [
     ".vscode",

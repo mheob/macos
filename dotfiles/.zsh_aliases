@@ -77,6 +77,9 @@ alias pnrt='pnpm run test'
 # Golang
 alias cobra='cobra-cli'
 
+# Infocmp
+alias infocmp='/opt/homebrew/opt/ncurses/bin/infocmp'
+
 # Flush Directory Service cache
 #alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
