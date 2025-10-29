@@ -1,5 +1,6 @@
 ABCDEFHIJKLMNOPQRSTUVWXYZ
 ABSPATH
+Aivazis
 Allrad
 antfu
 astro
@@ -15,7 +16,9 @@ Buchbarkeit
 builtins
 bunx
 Cascadia
+ccpim
 Chakra
+claude
 clsx
 cobertura
 Codespaces
@@ -23,6 +26,7 @@ cody
 commitlint
 Consolas
 Contentful
+Copyability
 Datasources
 datetime
 dompurify
@@ -31,9 +35,11 @@ easyfeedback
 einza
 elif
 empiriecom
+Entra
 esac
 esbenp
 esbuild
+esnext
 evans
 Fira
 FIXIT
@@ -54,18 +60,22 @@ Konfigurator
 linkify
 lockb
 lucide
+manifoldco
 Mantine
 Materna
 mheob
 misconfig
 Monaspace
+Montabaur
 moxer
+nolint
 NOSONAR
 nvmrc
 oklch
 outro
 owasp
 Parens
+pflag
 phpcs
 phpdoc
 picocolors
@@ -74,6 +84,7 @@ postgres
 Preact
 predev
 prestart
+promptui
 Qube
 readdir
 redhat
@@ -103,5 +114,6 @@ typesafety
 unrs
 vercel
 vsicons
+Websitebetreiber
 Xing
 xlarge

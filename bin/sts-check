@@ -1,0 +1,7 @@
+#! /bin/bash
+
+pushd ~/dev/customer/syzygy/sts-package-supply-chain-scripts/
+
+./lib/package-check ./data/affected-packages.csv ./data/known-hashes.csv ~/dev
+
+popd

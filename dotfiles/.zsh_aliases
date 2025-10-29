@@ -5,6 +5,7 @@
 
 # General
 #alias c='clear'
+#alias cd='z'
 #alias l='eza --icons'
 #alias ls='eza --icons'
 #alias la='eza --all --icons'

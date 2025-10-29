@@ -1,5 +1,7 @@
 # Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/ab/.zsh/completions:"* ]]; then export FPATH="/Users/ab/.zsh/completions:$FPATH"; fi
 # Q pre block. Keep at the top of this file.
 
 # Prefer US English and use UTF-8.
@@ -58,12 +60,22 @@ fi
 # Aliases and functions
 source "$HOME/.zsh_aliases"
 
+# XDG
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # FZF
 source <(fzf --zsh)
 
+# VS Code
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
 # PNPM
+FPATH="$HOME/.zsh/completions:$FPATH"
+autoload -U compinit && compinit
+
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PATH:$PNPM_HOME"
+export PATH="$PATH:$HOME/Library/pnpm/global/5/node_modules/.bin/"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -127,6 +139,7 @@ export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 
 # Default Exports
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 # tabtab source for packages
@@ -144,6 +157,9 @@ eval "$(starship init zsh)"
 # bun completions
 [ -s "/Users/ab/.bun/_bun" ] && source "/Users/ab/.bun/_bun"
 
+# deno
+. "/Users/ab/.deno/env"
+
 PATH=~/.console-ninja/.bin:$PATH
 
 # Added by Windsurf
@@ -153,3 +169,7 @@ export PATH="/Users/ab/.codeium/windsurf/bin:$PATH"
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/ab/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

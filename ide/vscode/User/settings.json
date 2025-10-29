@@ -458,7 +458,7 @@
       "addWords": true
     }
   ],
-  "cSpell.enabledFileTypes": {"astro": true},
+  "cSpell.enabledFileTypes": { "astro": true },
   "cSpell.language": "en,de,lorem",
   "cSpell.ignorePaths": [
     ".vscode",
@@ -468,5 +468,9 @@
     "**/node_modules/**",
     "**/vendor**",
     "**/vscode-extension/**"
-  ]
+  ],
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  }
 }

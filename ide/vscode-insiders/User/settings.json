@@ -222,7 +222,6 @@
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0.75,
-  "workbench.colorTheme": "Aura Dark",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.revealIfOpen": false,
   "workbench.iconTheme": "moxer-icons",

@@ -1,0 +1,13 @@
+theme = dark:catppuccin-mocha,light:catppuccin-latte
+#theme = "Tomorrow Night"
+#theme = "Nocturnal Winter"
+background-opacity = 0.9
+background-blur-radius = 10
+font-family = "GeistMono Nerd Font Mono"
+font-size = 16
+font-feature = -calt
+
+window-save-state = always
+
+keybind = cmd+shift+space=toggle_quick_terminal
+
