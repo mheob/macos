@@ -1,29 +1,29 @@
 # ZSH
-#alias zshaliases='vim ~/.zsh_aliases'
-#alias zshconfig='vim ~/.zshrc'
-#alias zshrestart='source ~/.zshrc'
+alias zshaliases='vim ~/.zsh_aliases'
+alias zshconfig='vim ~/.zshrc'
+alias zshrestart='source ~/.zshrc'
 
 # General
-#alias c='clear'
-#alias cd='z'
-#alias l='eza --icons'
-#alias ls='eza --icons'
-#alias la='eza --all --icons'
-#alias ll='eza --long --icons'
-#alias lla='eza --all --long --icons'
-#alias lsr='eza --recurse --icons'
-#alias tree='eza --tree --icons'
-#alias trm='trash'
+alias c='clear'
+alias cd='z'
+alias l='eza --icons'
+alias ls='eza --icons'
+alias la='eza --all --icons'
+alias ll='eza --long --icons'
+alias lla='eza --all --long --icons'
+alias lsr='eza --recurse --icons'
+alias tree='eza --tree --icons'
+alias trm='trash'
 
 # Brew
-#alias bi='brew install'
-#alias bic='brew install --cask'
-#alias binfo="brew info"
-#alias bl='brew list; echo'
-#alias bs='brew search'
-#alias bu='brew uninstall --zap'
-#alias cleanup='brew autoremove && brew cleanup -s --prune=7'
-#alias update='brew update && brew upgrade && brew cu --all --yes --cleanup'
+alias bi='brew install'
+alias bic='brew install --cask'
+alias binfo="brew info"
+alias bl='brew list; echo'
+alias bs='brew search'
+alias bu='brew uninstall --zap'
+alias cleanup='brew autoremove && brew cleanup -s --prune=7'
+alias update='brew update && brew upgrade && brew cu --all --yes --cleanup'
 
 # Code
 #alias code='cursor'
@@ -32,14 +32,14 @@
 #alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install'
 
 # Topgrade
-#alias tg='topgrade'
+alias tg='topgrade'
 
 # Neovim
 alias vim='nvim'
 
 # Git
 alias gmc='gitmoji -c'
-#alias gcz='npx cz'
+alias gcz='npx cz'
 alias gstau='git stash push -u'
 alias ggpf='git push origin $(current_branch) --force-with-lease --force-if-includes'
 unalias gk
@@ -48,7 +48,7 @@ unalias gk
 alias ntl='netlify'
 
 # Taze
-#alias nup='nlx taze -I'
+alias nu='nlx taze@latest --interactive --include-locked --peer --recursive --timediff'
 
 # PNPM
 alias pn='pnpm'
@@ -85,7 +85,7 @@ alias infocmp='/opt/homebrew/opt/ncurses/bin/infocmp'
 #alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
 # Always enable colored `grep` output
-#alias grep='grep --color=auto'
+alias grep='grep --color=auto'
 #alias fgrep='fgrep --color=auto'
 #alias egrep='egrep --color=auto'
 

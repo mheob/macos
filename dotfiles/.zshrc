@@ -1,5 +1,5 @@
-# Amazon Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+# Kiro CLI pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/ab/.zsh/completions:"* ]]; then export FPATH="/Users/ab/.zsh/completions:$FPATH"; fi
 # Q pre block. Keep at the top of this file.
@@ -146,9 +146,6 @@ export PATH="$HOME/bin:$PATH"
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
-# zoxide
-eval "$(zoxide init zsh)"
-
 # Starship
 eval "$(starship init zsh)"
 #export PROMPT="${PROMPT}"$'\n'
@@ -160,16 +157,17 @@ eval "$(starship init zsh)"
 # deno
 . "/Users/ab/.deno/env"
 
-PATH=~/.console-ninja/.bin:$PATH
+
 
 # Added by Windsurf
 export PATH="/Users/ab/.codeium/windsurf/bin:$PATH"
 
-# Q post block. Keep at the bottom of this file.
-
-# Amazon Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+# Q post block. Keep at the bottom of this file.### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/ab/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Zoxide
+eval "$(zoxide init zsh)"
+
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
