@@ -1,6 +1,7 @@
 ABCDEFHIJKLMNOPQRSTUVWXYZ
 ABSPATH
 Aivazis
+alex
 Allrad
 antfu
 astro
@@ -72,6 +73,7 @@ nolint
 NOSONAR
 nvmrc
 oklch
+openssl
 outro
 owasp
 Parens
@@ -99,6 +101,7 @@ Shadcn
 shortcode
 sonarlint
 sonarqube
+Stornierungsgrund
 Strapi
 tailwindcss
 tanstack
