@@ -2,6 +2,7 @@ ABCDEFHIJKLMNOPQRSTUVWXYZ
 ABSPATH
 Aivazis
 alex
+alexander
 Allrad
 antfu
 astro
@@ -32,6 +33,7 @@ Datasources
 datetime
 dompurify
 dotnet
+dppx
 easyfeedback
 einza
 elif
@@ -44,6 +46,7 @@ esnext
 evans
 Fira
 FIXIT
+fontsource
 foxundermoon
 fubade
 geist
@@ -58,6 +61,8 @@ Irlich
 itsb
 JETBRAINS
 Konfigurator
+linkedin
+Linkedin
 linkify
 lockb
 lucide
@@ -72,6 +77,7 @@ moxer
 nolint
 NOSONAR
 nvmrc
+offcanvas
 oklch
 openssl
 outro

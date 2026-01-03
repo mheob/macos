@@ -1,7 +1,10 @@
 {
   // Programming Languages
   "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
@@ -25,13 +28,16 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -40,7 +46,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "css.lint.unknownAtRules": "ignore",
   "go.toolsManagement.autoUpdate": true,
@@ -203,7 +209,7 @@
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.visible": 1,
   "files.associations": {
-    "*.css": "tailwindcss",
+    "*.css": "css",
     "*.env": "dotenv",
     "*.env.*": "dotenv",
     "*.mdx": "mdx",
@@ -405,5 +411,7 @@
       "icon": "tasklist",
       "iconColour": "#ffa500"
     }
-  }
+  },
+  "svelte.enable-ts-plugin": true,
+  "liveServer.settings.donotShowInfoMsg": true
 }
