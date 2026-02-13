@@ -5,6 +5,7 @@ alex
 alexander
 Allrad
 antfu
+äöüß
 astro
 Astro
 astrojs
@@ -12,6 +13,7 @@ autofetch
 autoloader
 Autoloader
 azuretools
+Backrefs
 boehm
 breakline
 Buchbarkeit
@@ -44,6 +46,7 @@ esbenp
 esbuild
 esnext
 evans
+Filenaming
 Fira
 FIXIT
 fontsource
@@ -56,6 +59,7 @@ GOARCH
 golangci
 hotspot
 ifdw
+Instantiator
 irlich
 Irlich
 itsb
@@ -79,6 +83,7 @@ NOSONAR
 nvmrc
 offcanvas
 oklch
+onlybangs
 openssl
 outro
 owasp

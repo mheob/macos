@@ -10,6 +10,5 @@ font-feature = -calt
 window-save-state = always
 
 keybind = cmd+shift+space=toggle_quick_terminal
-
 keybind = option+enter=text:\n
 keybind = shift+enter=text:\n

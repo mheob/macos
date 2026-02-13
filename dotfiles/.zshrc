@@ -157,17 +157,17 @@ eval "$(starship init zsh)"
 # deno
 . "/Users/ab/.deno/env"
 
+# Sonarlint
+export PATH="$HOME/dev/external-tools/sonar-scanner/bin:$PATH"
+export SONAR_TOKEN=0a376bb6ab8110f09ed2cf9f414da5e2479a4218
 
-
-# Added by Windsurf
-export PATH="/Users/ab/.codeium/windsurf/bin:$PATH"
-
-# Q post block. Keep at the bottom of this file.### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/ab/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+# Windsurf
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 
 # Zoxide
 eval "$(zoxide init zsh)"
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+
+alias claude-mem='bun "/Users/ab/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
