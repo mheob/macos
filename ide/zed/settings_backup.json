@@ -1,0 +1,90 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "default_profile": "write",
+    "tool_permissions": {
+      "tools": {
+        "fetch": {
+          "always_allow": [
+            {
+              "pattern": "^https?://www\\.prisma\\.io"
+            }
+          ]
+        },
+        "terminal": {
+          "always_allow": [
+            {
+              "pattern": "^nr\\s",
+            },
+            {
+              "pattern": "^git\\s",
+            },
+            {
+              "pattern": "^nlx\\s",
+            },
+            {
+              "pattern": "^gh\\b",
+            },
+          ],
+        },
+      },
+    },
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-opus-4.6",
+    },
+    "favorite_models": [],
+    "always_allow_tool_actions": false,
+    "model_parameters": [],
+  },
+  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 16,
+  "disable_ai": false,
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato",
+  },
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+      },
+    },
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "ui_font_family": ".ZedSans",
+  "ui_font_size": 16,
+  "show_whitespaces": "boundary",
+  "show_wrap_guides": true,
+  "terminal": {
+    "font_family": "GeistMono Nerd Font",
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato",
+  },
+  "wrap_guides": [100],
+}

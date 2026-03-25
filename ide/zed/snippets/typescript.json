@@ -1,0 +1,22 @@
+{
+  "OXLint - Disable": {
+    "prefix": "oxd",
+    "body": ["/* oxlint-disable $0 */"],
+    "description": "Disable OXLint "
+  },
+  "OXLint - Disable Line": {
+    "prefix": "oxdl",
+    "body": ["// oxlint-disable-line $0"],
+    "description": "Disable OXLint for the current line"
+  },
+  "OXLint - Disable Next Line": {
+    "prefix": "oxdnl",
+    "body": ["// oxlint-disable-next-line $0"],
+    "description": "Disable OXLint for the next line"
+  },
+  "OXLint - Enable": {
+    "prefix": "oxe",
+    "body": ["/* oxlint-enable $0 */"],
+    "description": "Enable OXLint"
+  }
+}

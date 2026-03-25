@@ -1,5 +1,7 @@
+
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
+
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/ab/.zsh/completions:"* ]]; then export FPATH="/Users/ab/.zsh/completions:$FPATH"; fi
 # Q pre block. Keep at the top of this file.
@@ -167,7 +169,9 @@ export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 # Zoxide
 eval "$(zoxide init zsh)"
 
-# Kiro CLI post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
 
 alias claude-mem='bun "/Users/ab/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
+
+
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"

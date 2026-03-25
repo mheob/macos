@@ -1,0 +1,99 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "default_profile": "write",
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "always_allow": [
+            { "pattern": "^gh\\s" },
+            { "pattern": "^git\\s" },
+            { "pattern": "^nlx\\s" },
+            { "pattern": "^nr\\s" },
+          ],
+        },
+      },
+    },
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-opus-4.6",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 16,
+  "colorize_brackets": true,
+  "context_servers": {
+    "azure-context-server": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "enable_production_credentials": false,
+      },
+    },
+    "commands": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-commands"],
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "context7_api_key": "ctx7sk-50e8898d-6340-4df7-b4df-eadae9589040",
+      },
+    },
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+    "github-copilot": {
+      "type": "registry",
+    },
+  },
+  "disable_ai": false,
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato",
+  },
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true,
+      },
+    },
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": { "enabled": "always" },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": { "enabled": "always" },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "ui_font_family": ".ZedSans",
+  "ui_font_size": 16,
+  "show_whitespaces": "boundary",
+  "show_wrap_guides": true,
+  "terminal": {
+    "font_family": "GeistMono Nerd Font",
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato",
+  },
+  "wrap_guides": [100],
+}
