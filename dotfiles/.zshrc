@@ -39,7 +39,6 @@ plugins=(
   history-substring-search
   macos
   node
-  nvm
   vscode
   yarn
   zsh-autosuggestions
@@ -79,35 +78,8 @@ export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PATH:$PNPM_HOME"
 export PATH="$PATH:$HOME/Library/pnpm/global/5/node_modules/.bin/"
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"                                       # This loads nvm
-[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-
-autoload -U add-zsh-hook
-load-nvmrc() {
-  local nvmrc_path
-  nvmrc_path="$(nvm_find_nvmrc)"
-
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version
-    nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-
-    if [ "$nvmrc_node_version" = "N/A" ]; then
-      nvm install
-    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
-      nvm use
-    fi
-  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-
-export PATH="$NVM_DIR/bin:$PATH"
+# Fast Node Manager (fnm)
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # Console Ninja
 export PATH="$HOME/.console-ninja/.bin:$PATH"
@@ -169,9 +141,7 @@ export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 # Zoxide
 eval "$(zoxide init zsh)"
 
-
 alias claude-mem='bun "/Users/ab/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
-
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"

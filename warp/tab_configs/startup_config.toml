@@ -1,0 +1,8 @@
+name = "New tab: ab"
+
+[[panes]]
+id = "main"
+type = "agent"
+directory = "/Users/ab"
+
+[params]

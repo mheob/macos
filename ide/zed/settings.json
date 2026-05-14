@@ -7,7 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
     "default_profile": "write",
     "tool_permissions": {
       "tools": {
@@ -22,8 +36,10 @@
       },
     },
     "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
       "provider": "copilot_chat",
-      "model": "claude-opus-4.6",
+      "model": "claude-sonnet-4.6",
     },
     "favorite_models": [],
     "model_parameters": [],
@@ -52,6 +68,9 @@
     },
   },
   "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry"
+    },
     "claude-acp": {
       "type": "registry",
     },

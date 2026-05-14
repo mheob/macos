@@ -15,7 +15,7 @@
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["android_studio", "containers", "gem", "helm", "ruby_gems", "git_repos"]
+disable = ["android_studio", "containers", "gem", "helm", "microsoft_office", "ruby_gems", "git_repos", "powershell"]
 
 # Ignore failures for these steps
 # ignore_failures = ["powershell"]

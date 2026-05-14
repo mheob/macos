@@ -33,6 +33,7 @@ Contentful
 Copyability
 Datasources
 datetime
+detailled
 dompurify
 dotnet
 dppx
