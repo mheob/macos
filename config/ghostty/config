@@ -1,7 +1,7 @@
-theme = dark:catppuccin-mocha.conf,light:catppuccin-latte.conf
+theme = dark:catppuccin-macchiato.conf,light:catppuccin-latte.conf
 #theme = "Tomorrow Night"
 #theme = "Nocturnal Winter"
-background-opacity = 0.9
+background-opacity = 0.8
 background-blur-radius = 10
 font-family = "GeistMono Nerd Font Mono"
 font-size = 16

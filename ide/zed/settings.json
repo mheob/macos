@@ -8,16 +8,16 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "project_panel": {
-    "dock": "left"
+    "dock": "right",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
     "sidebar_side": "right",
@@ -69,7 +69,7 @@
   },
   "agent_servers": {
     "github-copilot-cli": {
-      "type": "registry"
+      "type": "registry",
     },
     "claude-acp": {
       "type": "registry",
@@ -84,11 +84,36 @@
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Macchiato",
   },
+  "languages": {
+    "TSX": {
+        "language_servers": [
+            "typescript-ls",
+            "vtsls",
+        ],
+    },
+    "TypeScript": {
+        "language_servers": [
+            "typescript-ls",
+            "vtsls",
+        ],
+    },
+  },
   "lsp": {
     "biome": {
       "settings": {
         "require_config_file": true,
       },
+    },
+    "typescript-ls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": { "enabled": "always" },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": { "enabled": "always" },
+        },
+      },
+      "enable_lsp_tasks": true,
     },
     "vtsls": {
       "settings": {
@@ -113,6 +138,28 @@
     "mode": "system",
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Macchiato",
+  },
+  "theme_overrides": {
+    "Catppuccin Latte": {
+      "syntax": {
+        "constant.comment.todo": {
+          "color": "#ff8c00ff",
+        },
+        "property.comment.error": {
+          "color": "#d14209ff",
+        },
+      },
+    },
+    "Catppuccin Macchiato": {
+      "syntax": {
+        "constant.comment.todo": {
+          "color": "#ff8c00ff",
+        },
+        "property.comment.error": {
+          "color": "#d14209ff",
+        },
+      },
+    },
   },
   "wrap_guides": [100],
 }

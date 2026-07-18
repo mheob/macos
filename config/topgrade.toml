@@ -15,7 +15,7 @@
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["android_studio", "containers", "gem", "helm", "microsoft_office", "ruby_gems", "git_repos", "powershell"]
+disable = ["android_studio", "claude_code", "containers", "cursor_agent", "gem", "helm", "microsoft_office", "ruby_gems", "git_repos", "powershell"]
 
 # Ignore failures for these steps
 # ignore_failures = ["powershell"]
@@ -39,7 +39,7 @@ disable = ["android_studio", "containers", "gem", "helm", "microsoft_office", "r
 # display_time = true
 
 # Don't ask for confirmations (no default value)
-# assume_yes = true
+assume_yes = true
 
 # Do not ask to retry failed steps (default: false)
 # no_retry = true
@@ -67,7 +67,7 @@ disable = ["android_studio", "containers", "gem", "helm", "microsoft_office", "r
 # this will be ignored if the binary is built without self update support
 #
 # available also via setting the environment variable TOPGRADE_NO_SELF_UPGRADE)
-# no_self_update = true
+no_self_update = true
 
 # Extra tracing filter directives
 # These are prepended to the `--log-filter` argument

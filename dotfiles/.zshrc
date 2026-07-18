@@ -108,9 +108,6 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.3.0/bin:$PATH"
 
-# Python
-export PATH="$HOME/Library/Python/3.11/bin:$PATH"
-
 # Default Exports
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
@@ -130,6 +127,9 @@ eval "$(starship init zsh)"
 
 # deno
 . "/Users/ab/.deno/env"
+
+# Python
+export PATH="/opt/homebrew/opt/python@3.14/libexec/bin:$PATH"
 
 # Sonarlint
 export PATH="$HOME/dev/external-tools/sonar-scanner/bin:$PATH"

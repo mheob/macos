@@ -42,6 +42,7 @@ alias gmc='gitmoji -c'
 alias gcz='npx cz'
 alias gstau='git stash push -u'
 alias ggpf='git push origin $(current_branch) --force-with-lease --force-if-includes'
+alias lg='lazygit'
 unalias gk
 
 # Netlify
@@ -66,6 +67,8 @@ alias pno='pnpm outdated'
 alias pnup='pnpm update'
 alias pnupi='pnpm update -i'
 alias pnupil='pnpm update -iL'
+alias pnupir='pnpm update -ir'
+alias pnupilr='pnpm update -iLr'
 alias pne='pnpm exec'
 alias pnd='pnpm dlx'
 alias pnr='pnpm run'
@@ -73,6 +76,7 @@ alias pnrb='pnpm run build'
 alias pnrcs='pnpm run changeset'
 alias pnrf='pnpm run format'
 alias pnrl='pnpm run lint'
+alias pnrlf='pnpm run lint:fix'
 alias pnrd='pnpm run dev'
 alias pnrs='pnpm run start'
 alias pnrt='pnpm run test'
@@ -82,6 +86,10 @@ alias cobra='cobra-cli'
 
 # Infocmp
 alias infocmp='/opt/homebrew/opt/ncurses/bin/infocmp'
+
+# Claude
+alias claude-personal='CLAUDE_CONFIG_DIR=~/.claude-personal claude --allow-dangerously-skip-permissions'
+alias claude-work='CLAUDE_CONFIG_DIR=~/.claude-work claude --allow-dangerously-skip-permissions'
 
 # Flush Directory Service cache
 #alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
