@@ -88,13 +88,17 @@
     "TSX": {
         "language_servers": [
             "typescript-ls",
-            "vtsls",
+            "!vtsls",
+            "!typescript-language-server",
+            "...",
         ],
     },
     "TypeScript": {
         "language_servers": [
             "typescript-ls",
-            "vtsls",
+            "!vtsls",
+            "!typescript-language-server",
+            "...",
         ],
     },
   },

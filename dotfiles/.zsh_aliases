@@ -87,10 +87,6 @@ alias cobra='cobra-cli'
 # Infocmp
 alias infocmp='/opt/homebrew/opt/ncurses/bin/infocmp'
 
-# Claude
-alias claude-personal='CLAUDE_CONFIG_DIR=~/.claude-personal claude --allow-dangerously-skip-permissions'
-alias claude-work='CLAUDE_CONFIG_DIR=~/.claude-work claude --allow-dangerously-skip-permissions'
-
 # Flush Directory Service cache
 #alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
