@@ -58,8 +58,9 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-# Aliases and functions
+# Aliases, functions and Credentials
 source "$HOME/.zsh_aliases"
+source "$HOME/.zsh_credentials"
 
 # XDG
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -77,6 +78,9 @@ autoload -U compinit && compinit
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PATH:$PNPM_HOME"
 export PATH="$PATH:$HOME/Library/pnpm/global/5/node_modules/.bin/"
+
+# Git
+eval "$(but completions zsh)"
 
 # Fast Node Manager (fnm)
 eval "$(fnm env --use-on-cd --shell zsh)"
@@ -141,6 +145,7 @@ export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 # Zoxide
 eval "$(zoxide init zsh)"
 
+# Claude
 alias claude-mem='bun "/Users/ab/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"'
 
 # Kiro CLI post block. Keep at the bottom of this file.
