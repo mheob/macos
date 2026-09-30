@@ -3,6 +3,9 @@ alias zshaliases='vim ~/.zsh_aliases'
 alias zshconfig='vim ~/.zshrc'
 alias zshrestart='source ~/.zshrc'
 
+# SSH
+alias sshconfig='nvim ~/.ssh/config'
+
 # General
 alias c='clear'
 alias cd='z'
@@ -26,7 +29,7 @@ alias cleanup='brew autoremove && brew cleanup -s --prune=7'
 alias update='brew update && brew upgrade && brew cu --all --yes --cleanup'
 
 # Code
-#alias code='cursor'
+#alias code='cursor':q
 
 # Xcode
 #alias xcode-reinstall='sudo rm -rf /Library/Developer/CommandLineTools && xcode-select --install'
@@ -80,6 +83,7 @@ alias pnrlf='pnpm run lint:fix'
 alias pnrd='pnpm run dev'
 alias pnrs='pnpm run start'
 alias pnrt='pnpm run test'
+alias pnrtc='pnpm run test:cov'
 
 # Golang
 alias cobra='cobra-cli'

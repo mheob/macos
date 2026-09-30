@@ -443,4 +443,15 @@
 	"todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/rg",
 	"gitlens.ai.model": "gitkraken",
 	"gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash",
+	"gitlens.graph.details.location": "auto",
+	"yaml.disableSchemaDetection": [
+		"**/.github/workflows/*.yml",
+		"**/.github/workflows/*.yaml",
+		"**/.gitea/workflows/*.yml",
+		"**/.gitea/workflows/*.yaml",
+		"**/.forgejo/workflows/*.yml",
+		"**/.forgejo/workflows/*.yaml",
+		"azure-pipelines.yml",
+		"azure-pipelines.yaml"
+	],
 }

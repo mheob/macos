@@ -7,6 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "diff_view_style": "unified",
+  "cli_default_open_behavior": "new_window",
   "project_panel": {
     "dock": "right",
   },
@@ -146,21 +148,27 @@
   "theme_overrides": {
     "Catppuccin Latte": {
       "syntax": {
-        "constant.comment.todo": {
+        "property.comment.todo": {
           "color": "#ff8c00ff",
         },
+        "property.comment.info": {
+          "color": "#ff2d00ff",
+        },
         "property.comment.error": {
-          "color": "#d14209ff",
+          "color": "#ff4d00ff",
         },
       },
     },
     "Catppuccin Macchiato": {
       "syntax": {
-        "constant.comment.todo": {
+        "property.comment.todo": {
           "color": "#ff8c00ff",
         },
+        "property.comment.info": {
+          "color": "#ff2d00ff",
+        },
         "property.comment.error": {
-          "color": "#d14209ff",
+          "color": "#ff4d00ff",
         },
       },
     },

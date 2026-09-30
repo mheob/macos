@@ -39,10 +39,12 @@ plugins=(
   history-substring-search
   macos
   node
+  pnpm-shell-completion
   vscode
   yarn
   zsh-autosuggestions
   zsh-autosuggestions-abbreviations-strategy
+  zsh-claudecode-completion
   zsh-syntax-highlighting
 )
 
@@ -72,9 +74,6 @@ source <(fzf --zsh)
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
 # PNPM
-FPATH="$HOME/.zsh/completions:$FPATH"
-autoload -U compinit && compinit
-
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PATH:$PNPM_HOME"
 export PATH="$PATH:$HOME/Library/pnpm/global/5/node_modules/.bin/"
@@ -119,7 +118,7 @@ export PATH="$HOME/bin:$PATH"
 
 # tabtab source for packages
 # uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+#[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
 # Starship
 eval "$(starship init zsh)"
@@ -150,3 +149,6 @@ alias claude-mem='bun "/Users/ab/.claude/plugins/marketplaces/thedotmack/plugin/
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+
+# sentry
+fpath=("/Users/ab/.local/share/zsh/site-functions" $fpath)
