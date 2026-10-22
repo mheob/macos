@@ -176,3 +176,19 @@ function o() {
 function tre() {
   tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
 }
+
+# `but-fix-target` rebuilds the GitButler workspace on the configured target
+# branch. Switching the target to a branch that does not contain the current
+# workspace base leaves the old base behind as a pseudo-branch, which GitButler
+# can neither unapply nor discard. Switch the target first, then run this.
+function but-fix-target() {
+  local branch
+  branch=$(git config gitbutler.project.targetref) || return 1
+  branch=${branch#refs/remotes/origin/}
+  git fetch origin "$branch" || return 1
+  git show-ref --quiet "refs/heads/$branch" || git branch --track "$branch" "origin/$branch" || return 1
+  but teardown --checkout-to "$branch" || return 1
+  git merge --ff-only "origin/$branch" || return 1
+  git branch -D gitbutler/workspace || return 1
+  but setup
+}

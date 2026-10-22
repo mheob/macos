@@ -22,7 +22,9 @@
     "dock": "left",
   },
   "agent": {
-    "sidebar_side": "right",
+    "threads_sidebar": {
+      "position": "right"
+    },
     "dock": "right",
     "default_profile": "write",
     "tool_permissions": {
@@ -46,6 +48,17 @@
     "favorite_models": [],
     "model_parameters": [],
   },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+    "github-copilot": {
+      "type": "registry",
+    },
+  },
   "buffer_font_family": "FiraCode Nerd Font",
   "buffer_font_size": 16,
   "colorize_brackets": true,
@@ -61,26 +74,17 @@
       "command": "npx",
       "args": ["-y", "mcp-server-commands"],
     },
-    "mcp-server-context7": {
-      "enabled": true,
-      "remote": false,
-      "settings": {
-        "context7_api_key": "ctx7sk-50e8898d-6340-4df7-b4df-eadae9589040",
-      },
-    },
-  },
-  "agent_servers": {
-    "github-copilot-cli": {
-      "type": "registry",
-    },
-    "claude-acp": {
-      "type": "registry",
-    },
-    "github-copilot": {
-      "type": "registry",
+    "context7": {
+      // Reads the API key from the macOS keychain (context7-api-key) and hands it over as
+      // CONTEXT7_API_KEY, so it is neither in this file nor in the process list.
+      "command": "/Users/ab/.local/bin/context7-mcp",
+      "args": [],
     },
   },
   "disable_ai": false,
+  "edit_predictions": {
+    "provider": "copilot"
+  },
   "icon_theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
@@ -105,11 +109,6 @@
     },
   },
   "lsp": {
-    "biome": {
-      "settings": {
-        "require_config_file": true,
-      },
-    },
     "typescript-ls": {
       "settings": {
         "typescript": {
@@ -133,7 +132,6 @@
       "enable_lsp_tasks": true,
     },
   },
-  "ui_font_family": ".ZedSans",
   "ui_font_size": 16,
   "show_whitespaces": "boundary",
   "show_wrap_guides": true,
